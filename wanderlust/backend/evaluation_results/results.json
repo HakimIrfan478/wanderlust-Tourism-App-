@@ -1,0 +1,4728 @@
+{
+  "meta": {
+    "generated_at": "2026-08-03T12:45:26.577531+00:00",
+    "catalogue_size": 48,
+    "query_set": {
+      "query_count": 26,
+      "queries_by_type": {
+        "lexical": 18,
+        "paraphrase": 8
+      },
+      "relevance_judgements": 155,
+      "mean_judged_per_query": 5.96,
+      "grade_scale": {
+        "3": "ideal",
+        "2": "relevant",
+        "1": "marginal",
+        "0": "not relevant"
+      }
+    },
+    "k_values": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "binary_threshold": 1,
+    "headline_metric": "ndcg@5",
+    "models_evaluated": [
+      "semantic",
+      "tfidf"
+    ],
+    "models_unavailable": {},
+    "embedding_model": "all-MiniLM-L6-v2",
+    "python": "3.13.1",
+    "platform": "Windows-11-10.0.26100-SP0"
+  },
+  "models": {
+    "semantic": {
+      "model": "semantic",
+      "label": "Semantic (sentence-transformer)",
+      "query_count": 26,
+      "overall": {
+        "precision@1": 0.8846,
+        "recall@1": 0.1665,
+        "ndcg@1": 0.7308,
+        "precision@3": 0.6539,
+        "recall@3": 0.3482,
+        "ndcg@3": 0.6573,
+        "precision@5": 0.5923,
+        "recall@5": 0.5208,
+        "ndcg@5": 0.6704,
+        "precision@10": 0.4077,
+        "recall@10": 0.7131,
+        "ndcg@10": 0.7346,
+        "mrr": 0.8997,
+        "map": 0.5849
+      },
+      "by_query_type": {
+        "lexical": {
+          "query_count": 18,
+          "precision@1": 1.0,
+          "recall@1": 0.1919,
+          "ndcg@1": 0.8095,
+          "precision@3": 0.7593,
+          "recall@3": 0.4074,
+          "ndcg@3": 0.7423,
+          "precision@5": 0.6556,
+          "recall@5": 0.5784,
+          "ndcg@5": 0.745,
+          "precision@10": 0.4556,
+          "recall@10": 0.806,
+          "ndcg@10": 0.8199,
+          "mrr": 1.0,
+          "map": 0.6688
+        },
+        "paraphrase": {
+          "query_count": 8,
+          "precision@1": 0.625,
+          "recall@1": 0.1095,
+          "ndcg@1": 0.5536,
+          "precision@3": 0.4167,
+          "recall@3": 0.2149,
+          "ndcg@3": 0.4659,
+          "precision@5": 0.45,
+          "recall@5": 0.3911,
+          "ndcg@5": 0.5026,
+          "precision@10": 0.3,
+          "recall@10": 0.5042,
+          "ndcg@10": 0.5427,
+          "mrr": 0.6741,
+          "map": 0.3961
+        }
+      },
+      "latency_ms": {
+        "mean": 16.59,
+        "min": 11.93,
+        "max": 30.27
+      },
+      "per_query": [
+        {
+          "query_id": "q01",
+          "query": "quiet beaches with great seafood and no big crowds",
+          "type": "lexical",
+          "judged_count": 7,
+          "elapsed_ms": 30.27,
+          "top_results": [
+            {
+              "id": 13,
+              "name": "Maldives",
+              "score": 0.4563,
+              "relevance": 2
+            },
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.4392,
+              "relevance": 3
+            },
+            {
+              "id": 14,
+              "name": "Phuket",
+              "score": 0.4296,
+              "relevance": 1
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.4085,
+              "relevance": 0
+            },
+            {
+              "id": 15,
+              "name": "Zanzibar",
+              "score": 0.3822,
+              "relevance": 3
+            },
+            {
+              "id": 11,
+              "name": "Barcelona",
+              "score": 0.3624,
+              "relevance": 0
+            },
+            {
+              "id": 18,
+              "name": "El Nido, Palawan",
+              "score": 0.3553,
+              "relevance": 3
+            },
+            {
+              "id": 1,
+              "name": "Santorini",
+              "score": 0.3449,
+              "relevance": 2
+            },
+            {
+              "id": 28,
+              "name": "Dubai",
+              "score": 0.3377,
+              "relevance": 0
+            },
+            {
+              "id": 9,
+              "name": "Cape Town",
+              "score": 0.3228,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.1429,
+            "ndcg@1": 0.4286,
+            "precision@3": 1.0,
+            "recall@3": 0.4286,
+            "ndcg@3": 0.5307,
+            "precision@5": 0.8,
+            "recall@5": 0.5714,
+            "ndcg@5": 0.6117,
+            "precision@10": 0.6,
+            "recall@10": 0.8571,
+            "ndcg@10": 0.7699,
+            "mrr": 1.0,
+            "map": 0.752
+          }
+        },
+        {
+          "query_id": "q02",
+          "query": "somewhere peaceful by the sea to switch off completely",
+          "type": "paraphrase",
+          "judged_count": 7,
+          "elapsed_ms": 15.92,
+          "top_results": [
+            {
+              "id": 13,
+              "name": "Maldives",
+              "score": 0.2986,
+              "relevance": 3
+            },
+            {
+              "id": 18,
+              "name": "El Nido, Palawan",
+              "score": 0.2702,
+              "relevance": 3
+            },
+            {
+              "id": 28,
+              "name": "Dubai",
+              "score": 0.2651,
+              "relevance": 0
+            },
+            {
+              "id": 24,
+              "name": "Tokyo",
+              "score": 0.2593,
+              "relevance": 0
+            },
+            {
+              "id": 1,
+              "name": "Santorini",
+              "score": 0.2593,
+              "relevance": 2
+            },
+            {
+              "id": 11,
+              "name": "Barcelona",
+              "score": 0.253,
+              "relevance": 0
+            },
+            {
+              "id": 9,
+              "name": "Cape Town",
+              "score": 0.2442,
+              "relevance": 0
+            },
+            {
+              "id": 15,
+              "name": "Zanzibar",
+              "score": 0.2425,
+              "relevance": 2
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.2382,
+              "relevance": 0
+            },
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.2362,
+              "relevance": 2
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.1429,
+            "ndcg@1": 1.0,
+            "precision@3": 0.6667,
+            "recall@3": 0.2857,
+            "ndcg@3": 0.8839,
+            "precision@5": 0.6,
+            "recall@5": 0.4286,
+            "ndcg@5": 0.8183,
+            "precision@10": 0.5,
+            "recall@10": 0.7143,
+            "ndcg@10": 0.8961,
+            "mrr": 1.0,
+            "map": 0.5143
+          }
+        },
+        {
+          "query_id": "q03",
+          "query": "ancient ruins and museums with amazing local food",
+          "type": "lexical",
+          "judged_count": 8,
+          "elapsed_ms": 11.93,
+          "top_results": [
+            {
+              "id": 6,
+              "name": "Rome",
+              "score": 0.5987,
+              "relevance": 3
+            },
+            {
+              "id": 34,
+              "name": "Athens",
+              "score": 0.517,
+              "relevance": 3
+            },
+            {
+              "id": 46,
+              "name": "Oaxaca",
+              "score": 0.4785,
+              "relevance": 2
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.3888,
+              "relevance": 0
+            },
+            {
+              "id": 33,
+              "name": "Pyramids of Giza",
+              "score": 0.3855,
+              "relevance": 2
+            },
+            {
+              "id": 11,
+              "name": "Barcelona",
+              "score": 0.3719,
+              "relevance": 0
+            },
+            {
+              "id": 32,
+              "name": "Angkor Wat",
+              "score": 0.3361,
+              "relevance": 1
+            },
+            {
+              "id": 2,
+              "name": "Kyoto",
+              "score": 0.3283,
+              "relevance": 0
+            },
+            {
+              "id": 47,
+              "name": "Hoi An",
+              "score": 0.3196,
+              "relevance": 0
+            },
+            {
+              "id": 25,
+              "name": "Istanbul",
+              "score": 0.3173,
+              "relevance": 2
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.125,
+            "ndcg@1": 1.0,
+            "precision@3": 1.0,
+            "recall@3": 0.375,
+            "ndcg@3": 1.0,
+            "precision@5": 0.8,
+            "recall@5": 0.5,
+            "ndcg@5": 0.9159,
+            "precision@10": 0.6,
+            "recall@10": 0.75,
+            "ndcg@10": 0.933,
+            "mrr": 1.0,
+            "map": 0.6393
+          }
+        },
+        {
+          "query_id": "q04",
+          "query": "extreme adventure sports in the mountains",
+          "type": "lexical",
+          "judged_count": 8,
+          "elapsed_ms": 15.14,
+          "top_results": [
+            {
+              "id": 5,
+              "name": "Queenstown",
+              "score": 0.4634,
+              "relevance": 3
+            },
+            {
+              "id": 42,
+              "name": "Moab",
+              "score": 0.371,
+              "relevance": 2
+            },
+            {
+              "id": 3,
+              "name": "Banff National Park",
+              "score": 0.345,
+              "relevance": 1
+            },
+            {
+              "id": 12,
+              "name": "Serengeti National Park",
+              "score": 0.3086,
+              "relevance": 0
+            },
+            {
+              "id": 40,
+              "name": "Everest Base Camp Trek",
+              "score": 0.3043,
+              "relevance": 2
+            },
+            {
+              "id": 22,
+              "name": "Dolomites",
+              "score": 0.3033,
+              "relevance": 1
+            },
+            {
+              "id": 38,
+              "name": "Yellowstone National Park",
+              "score": 0.2969,
+              "relevance": 0
+            },
+            {
+              "id": 19,
+              "name": "Interlaken",
+              "score": 0.274,
+              "relevance": 2
+            },
+            {
+              "id": 8,
+              "name": "Reykjavik",
+              "score": 0.2682,
+              "relevance": 0
+            },
+            {
+              "id": 39,
+              "name": "Kruger National Park",
+              "score": 0.2669,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.125,
+            "ndcg@1": 1.0,
+            "precision@3": 1.0,
+            "recall@3": 0.375,
+            "ndcg@3": 0.7272,
+            "precision@5": 0.8,
+            "recall@5": 0.5,
+            "ndcg@5": 0.6867,
+            "precision@10": 0.6,
+            "recall@10": 0.75,
+            "ndcg@10": 0.7241,
+            "mrr": 1.0,
+            "map": 0.6729
+          }
+        },
+        {
+          "query_id": "q05",
+          "query": "wildlife safari and unspoiled nature",
+          "type": "lexical",
+          "judged_count": 5,
+          "elapsed_ms": 13.96,
+          "top_results": [
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.5384,
+              "relevance": 2
+            },
+            {
+              "id": 12,
+              "name": "Serengeti National Park",
+              "score": 0.5311,
+              "relevance": 3
+            },
+            {
+              "id": 39,
+              "name": "Kruger National Park",
+              "score": 0.5192,
+              "relevance": 3
+            },
+            {
+              "id": 35,
+              "name": "Galápagos Islands",
+              "score": 0.466,
+              "relevance": 2
+            },
+            {
+              "id": 38,
+              "name": "Yellowstone National Park",
+              "score": 0.3504,
+              "relevance": 1
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.3099,
+              "relevance": 0
+            },
+            {
+              "id": 41,
+              "name": "La Fortuna and Arenal",
+              "score": 0.2669,
+              "relevance": 0
+            },
+            {
+              "id": 18,
+              "name": "El Nido, Palawan",
+              "score": 0.2477,
+              "relevance": 0
+            },
+            {
+              "id": 21,
+              "name": "Torres del Paine",
+              "score": 0.236,
+              "relevance": 0
+            },
+            {
+              "id": 3,
+              "name": "Banff National Park",
+              "score": 0.2357,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.2,
+            "ndcg@1": 0.4286,
+            "precision@3": 1.0,
+            "recall@3": 0.6,
+            "ndcg@3": 0.8452,
+            "precision@5": 1.0,
+            "recall@5": 1.0,
+            "ndcg@5": 0.863,
+            "precision@10": 0.5,
+            "recall@10": 1.0,
+            "ndcg@10": 0.863,
+            "mrr": 1.0,
+            "map": 1.0
+          }
+        },
+        {
+          "query_id": "q06",
+          "query": "romantic getaway with beautiful sunsets",
+          "type": "lexical",
+          "judged_count": 7,
+          "elapsed_ms": 14.47,
+          "top_results": [
+            {
+              "id": 1,
+              "name": "Santorini",
+              "score": 0.3776,
+              "relevance": 3
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.2749,
+              "relevance": 2
+            },
+            {
+              "id": 12,
+              "name": "Serengeti National Park",
+              "score": 0.2469,
+              "relevance": 0
+            },
+            {
+              "id": 18,
+              "name": "El Nido, Palawan",
+              "score": 0.2167,
+              "relevance": 1
+            },
+            {
+              "id": 9,
+              "name": "Cape Town",
+              "score": 0.2137,
+              "relevance": 0
+            },
+            {
+              "id": 3,
+              "name": "Banff National Park",
+              "score": 0.2075,
+              "relevance": 0
+            },
+            {
+              "id": 13,
+              "name": "Maldives",
+              "score": 0.2027,
+              "relevance": 3
+            },
+            {
+              "id": 8,
+              "name": "Reykjavik",
+              "score": 0.1991,
+              "relevance": 0
+            },
+            {
+              "id": 29,
+              "name": "Buenos Aires",
+              "score": 0.197,
+              "relevance": 0
+            },
+            {
+              "id": 28,
+              "name": "Dubai",
+              "score": 0.1957,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.1429,
+            "ndcg@1": 1.0,
+            "precision@3": 0.6667,
+            "recall@3": 0.2857,
+            "ndcg@3": 0.6885,
+            "precision@5": 0.6,
+            "recall@5": 0.4286,
+            "ndcg@5": 0.6388,
+            "precision@10": 0.4,
+            "recall@10": 0.5714,
+            "ndcg@10": 0.7626,
+            "mrr": 1.0,
+            "map": 0.4745
+          }
+        },
+        {
+          "query_id": "q07",
+          "query": "cheap trip in Asia with amazing street food",
+          "type": "lexical",
+          "judged_count": 7,
+          "elapsed_ms": 15.54,
+          "top_results": [
+            {
+              "id": 14,
+              "name": "Phuket",
+              "score": 0.4799,
+              "relevance": 3
+            },
+            {
+              "id": 26,
+              "name": "Singapore",
+              "score": 0.4277,
+              "relevance": 0
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.3763,
+              "relevance": 2
+            },
+            {
+              "id": 24,
+              "name": "Tokyo",
+              "score": 0.3443,
+              "relevance": 0
+            },
+            {
+              "id": 25,
+              "name": "Istanbul",
+              "score": 0.34,
+              "relevance": 1
+            },
+            {
+              "id": 47,
+              "name": "Hoi An",
+              "score": 0.3228,
+              "relevance": 3
+            },
+            {
+              "id": 20,
+              "name": "Hunza Valley",
+              "score": 0.3073,
+              "relevance": 0
+            },
+            {
+              "id": 15,
+              "name": "Zanzibar",
+              "score": 0.2997,
+              "relevance": 0
+            },
+            {
+              "id": 29,
+              "name": "Buenos Aires",
+              "score": 0.2652,
+              "relevance": 0
+            },
+            {
+              "id": 4,
+              "name": "Marrakesh",
+              "score": 0.2529,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.1429,
+            "ndcg@1": 1.0,
+            "precision@3": 0.6667,
+            "recall@3": 0.2857,
+            "ndcg@3": 0.6581,
+            "precision@5": 0.6,
+            "recall@5": 0.4286,
+            "ndcg@5": 0.5782,
+            "precision@10": 0.4,
+            "recall@10": 0.5714,
+            "ndcg@10": 0.6786,
+            "mrr": 1.0,
+            "map": 0.419
+          }
+        },
+        {
+          "query_id": "q08",
+          "query": "trekking at high altitude in the Himalayas",
+          "type": "lexical",
+          "judged_count": 5,
+          "elapsed_ms": 15.08,
+          "top_results": [
+            {
+              "id": 40,
+              "name": "Everest Base Camp Trek",
+              "score": 0.6353,
+              "relevance": 3
+            },
+            {
+              "id": 20,
+              "name": "Hunza Valley",
+              "score": 0.3862,
+              "relevance": 3
+            },
+            {
+              "id": 12,
+              "name": "Serengeti National Park",
+              "score": 0.3519,
+              "relevance": 0
+            },
+            {
+              "id": 19,
+              "name": "Interlaken",
+              "score": 0.3518,
+              "relevance": 0
+            },
+            {
+              "id": 42,
+              "name": "Moab",
+              "score": 0.3518,
+              "relevance": 0
+            },
+            {
+              "id": 45,
+              "name": "Paro Valley",
+              "score": 0.3292,
+              "relevance": 2
+            },
+            {
+              "id": 3,
+              "name": "Banff National Park",
+              "score": 0.3231,
+              "relevance": 0
+            },
+            {
+              "id": 22,
+              "name": "Dolomites",
+              "score": 0.3099,
+              "relevance": 0
+            },
+            {
+              "id": 43,
+              "name": "Wadi Rum",
+              "score": 0.2944,
+              "relevance": 0
+            },
+            {
+              "id": 44,
+              "name": "Varanasi",
+              "score": 0.2854,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.2,
+            "ndcg@1": 1.0,
+            "precision@3": 0.6667,
+            "recall@3": 0.4,
+            "ndcg@3": 0.8839,
+            "precision@5": 0.4,
+            "recall@5": 0.4,
+            "ndcg@5": 0.8313,
+            "precision@10": 0.3,
+            "recall@10": 0.6,
+            "ndcg@10": 0.9091,
+            "mrr": 1.0,
+            "map": 0.5
+          }
+        },
+        {
+          "query_id": "q09",
+          "query": "a city break with great architecture and walkable streets",
+          "type": "lexical",
+          "judged_count": 8,
+          "elapsed_ms": 18.49,
+          "top_results": [
+            {
+              "id": 27,
+              "name": "Lisbon",
+              "score": 0.393,
+              "relevance": 3
+            },
+            {
+              "id": 24,
+              "name": "Tokyo",
+              "score": 0.3386,
+              "relevance": 0
+            },
+            {
+              "id": 11,
+              "name": "Barcelona",
+              "score": 0.3305,
+              "relevance": 3
+            },
+            {
+              "id": 6,
+              "name": "Rome",
+              "score": 0.2981,
+              "relevance": 2
+            },
+            {
+              "id": 29,
+              "name": "Buenos Aires",
+              "score": 0.2905,
+              "relevance": 1
+            },
+            {
+              "id": 26,
+              "name": "Singapore",
+              "score": 0.2896,
+              "relevance": 1
+            },
+            {
+              "id": 30,
+              "name": "Amsterdam",
+              "score": 0.2884,
+              "relevance": 3
+            },
+            {
+              "id": 34,
+              "name": "Athens",
+              "score": 0.2854,
+              "relevance": 1
+            },
+            {
+              "id": 28,
+              "name": "Dubai",
+              "score": 0.2636,
+              "relevance": 0
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.2279,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.125,
+            "ndcg@1": 1.0,
+            "precision@3": 0.6667,
+            "recall@3": 0.25,
+            "ndcg@3": 0.7039,
+            "precision@5": 0.8,
+            "recall@5": 0.5,
+            "ndcg@5": 0.7012,
+            "precision@10": 0.7,
+            "recall@10": 0.875,
+            "ndcg@10": 0.8264,
+            "mrr": 1.0,
+            "map": 0.7228
+          }
+        },
+        {
+          "query_id": "q10",
+          "query": "see the northern lights and dramatic volcanic landscapes",
+          "type": "lexical",
+          "judged_count": 2,
+          "elapsed_ms": 16.92,
+          "top_results": [
+            {
+              "id": 8,
+              "name": "Reykjavik",
+              "score": 0.5908,
+              "relevance": 3
+            },
+            {
+              "id": 35,
+              "name": "Galápagos Islands",
+              "score": 0.3385,
+              "relevance": 0
+            },
+            {
+              "id": 21,
+              "name": "Torres del Paine",
+              "score": 0.327,
+              "relevance": 0
+            },
+            {
+              "id": 38,
+              "name": "Yellowstone National Park",
+              "score": 0.3045,
+              "relevance": 0
+            },
+            {
+              "id": 3,
+              "name": "Banff National Park",
+              "score": 0.3034,
+              "relevance": 0
+            },
+            {
+              "id": 41,
+              "name": "La Fortuna and Arenal",
+              "score": 0.2976,
+              "relevance": 0
+            },
+            {
+              "id": 1,
+              "name": "Santorini",
+              "score": 0.277,
+              "relevance": 1
+            },
+            {
+              "id": 15,
+              "name": "Zanzibar",
+              "score": 0.2751,
+              "relevance": 0
+            },
+            {
+              "id": 12,
+              "name": "Serengeti National Park",
+              "score": 0.2659,
+              "relevance": 0
+            },
+            {
+              "id": 22,
+              "name": "Dolomites",
+              "score": 0.2648,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.5,
+            "ndcg@1": 1.0,
+            "precision@3": 0.3333,
+            "recall@3": 0.5,
+            "ndcg@3": 0.9173,
+            "precision@5": 0.2,
+            "recall@5": 0.5,
+            "ndcg@5": 0.9173,
+            "precision@10": 0.2,
+            "recall@10": 1.0,
+            "ndcg@10": 0.961,
+            "mrr": 1.0,
+            "map": 0.6429
+          }
+        },
+        {
+          "query_id": "q11",
+          "query": "learn about Buddhist temples and monasteries",
+          "type": "lexical",
+          "judged_count": 4,
+          "elapsed_ms": 16.99,
+          "top_results": [
+            {
+              "id": 2,
+              "name": "Kyoto",
+              "score": 0.5087,
+              "relevance": 3
+            },
+            {
+              "id": 32,
+              "name": "Angkor Wat",
+              "score": 0.4819,
+              "relevance": 2
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.4448,
+              "relevance": 0
+            },
+            {
+              "id": 45,
+              "name": "Paro Valley",
+              "score": 0.4207,
+              "relevance": 3
+            },
+            {
+              "id": 40,
+              "name": "Everest Base Camp Trek",
+              "score": 0.3267,
+              "relevance": 0
+            },
+            {
+              "id": 44,
+              "name": "Varanasi",
+              "score": 0.3111,
+              "relevance": 1
+            },
+            {
+              "id": 6,
+              "name": "Rome",
+              "score": 0.2752,
+              "relevance": 0
+            },
+            {
+              "id": 33,
+              "name": "Pyramids of Giza",
+              "score": 0.2639,
+              "relevance": 0
+            },
+            {
+              "id": 1,
+              "name": "Santorini",
+              "score": 0.2432,
+              "relevance": 0
+            },
+            {
+              "id": 47,
+              "name": "Hoi An",
+              "score": 0.2389,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.25,
+            "ndcg@1": 1.0,
+            "precision@3": 0.6667,
+            "recall@3": 0.5,
+            "ndcg@3": 0.6885,
+            "precision@5": 0.6,
+            "recall@5": 0.75,
+            "ndcg@5": 0.8921,
+            "precision@10": 0.4,
+            "recall@10": 1.0,
+            "ndcg@10": 0.9188,
+            "mrr": 1.0,
+            "map": 0.8542
+          }
+        },
+        {
+          "query_id": "q12",
+          "query": "desert landscapes and camping under the stars",
+          "type": "lexical",
+          "judged_count": 5,
+          "elapsed_ms": 17.03,
+          "top_results": [
+            {
+              "id": 43,
+              "name": "Wadi Rum",
+              "score": 0.4167,
+              "relevance": 3
+            },
+            {
+              "id": 8,
+              "name": "Reykjavik",
+              "score": 0.3422,
+              "relevance": 0
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.3416,
+              "relevance": 0
+            },
+            {
+              "id": 28,
+              "name": "Dubai",
+              "score": 0.3359,
+              "relevance": 1
+            },
+            {
+              "id": 3,
+              "name": "Banff National Park",
+              "score": 0.3308,
+              "relevance": 0
+            },
+            {
+              "id": 31,
+              "name": "Petra",
+              "score": 0.322,
+              "relevance": 0
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.3164,
+              "relevance": 0
+            },
+            {
+              "id": 17,
+              "name": "Tulum",
+              "score": 0.295,
+              "relevance": 0
+            },
+            {
+              "id": 42,
+              "name": "Moab",
+              "score": 0.2941,
+              "relevance": 2
+            },
+            {
+              "id": 22,
+              "name": "Dolomites",
+              "score": 0.2778,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.2,
+            "ndcg@1": 1.0,
+            "precision@3": 0.3333,
+            "recall@3": 0.2,
+            "ndcg@3": 0.6735,
+            "precision@5": 0.4,
+            "recall@5": 0.4,
+            "ndcg@5": 0.6628,
+            "precision@10": 0.3,
+            "recall@10": 0.6,
+            "ndcg@10": 0.7434,
+            "mrr": 1.0,
+            "map": 0.3667
+          }
+        },
+        {
+          "query_id": "q13",
+          "query": "a safe destination that is easy to travel with children",
+          "type": "paraphrase",
+          "judged_count": 5,
+          "elapsed_ms": 16.58,
+          "top_results": [
+            {
+              "id": 26,
+              "name": "Singapore",
+              "score": 0.2585,
+              "relevance": 3
+            },
+            {
+              "id": 12,
+              "name": "Serengeti National Park",
+              "score": 0.2438,
+              "relevance": 0
+            },
+            {
+              "id": 5,
+              "name": "Queenstown",
+              "score": 0.2421,
+              "relevance": 0
+            },
+            {
+              "id": 24,
+              "name": "Tokyo",
+              "score": 0.2204,
+              "relevance": 1
+            },
+            {
+              "id": 28,
+              "name": "Dubai",
+              "score": 0.2018,
+              "relevance": 0
+            },
+            {
+              "id": 14,
+              "name": "Phuket",
+              "score": 0.1971,
+              "relevance": 0
+            },
+            {
+              "id": 39,
+              "name": "Kruger National Park",
+              "score": 0.1924,
+              "relevance": 0
+            },
+            {
+              "id": 9,
+              "name": "Cape Town",
+              "score": 0.192,
+              "relevance": 0
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.1827,
+              "relevance": 0
+            },
+            {
+              "id": 4,
+              "name": "Marrakesh",
+              "score": 0.1806,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.2,
+            "ndcg@1": 1.0,
+            "precision@3": 0.3333,
+            "recall@3": 0.2,
+            "ndcg@3": 0.6735,
+            "precision@5": 0.4,
+            "recall@5": 0.4,
+            "ndcg@5": 0.6628,
+            "precision@10": 0.2,
+            "recall@10": 0.4,
+            "ndcg@10": 0.6628,
+            "mrr": 1.0,
+            "map": 0.3
+          }
+        },
+        {
+          "query_id": "q14",
+          "query": "snorkelling and diving on coral reefs",
+          "type": "lexical",
+          "judged_count": 6,
+          "elapsed_ms": 15.58,
+          "top_results": [
+            {
+              "id": 35,
+              "name": "Galápagos Islands",
+              "score": 0.49,
+              "relevance": 3
+            },
+            {
+              "id": 13,
+              "name": "Maldives",
+              "score": 0.4588,
+              "relevance": 3
+            },
+            {
+              "id": 18,
+              "name": "El Nido, Palawan",
+              "score": 0.3939,
+              "relevance": 3
+            },
+            {
+              "id": 17,
+              "name": "Tulum",
+              "score": 0.3244,
+              "relevance": 1
+            },
+            {
+              "id": 15,
+              "name": "Zanzibar",
+              "score": 0.2908,
+              "relevance": 2
+            },
+            {
+              "id": 14,
+              "name": "Phuket",
+              "score": 0.2452,
+              "relevance": 2
+            },
+            {
+              "id": 4,
+              "name": "Marrakesh",
+              "score": 0.2414,
+              "relevance": 0
+            },
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.2393,
+              "relevance": 0
+            },
+            {
+              "id": 43,
+              "name": "Wadi Rum",
+              "score": 0.2322,
+              "relevance": 0
+            },
+            {
+              "id": 9,
+              "name": "Cape Town",
+              "score": 0.2152,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.1667,
+            "ndcg@1": 1.0,
+            "precision@3": 1.0,
+            "recall@3": 0.5,
+            "ndcg@3": 1.0,
+            "precision@5": 1.0,
+            "recall@5": 0.8333,
+            "ndcg@5": 0.9504,
+            "precision@10": 0.6,
+            "recall@10": 1.0,
+            "ndcg@10": 0.9916,
+            "mrr": 1.0,
+            "map": 1.0
+          }
+        },
+        {
+          "query_id": "q15",
+          "query": "skiing and snowboarding holiday",
+          "type": "lexical",
+          "judged_count": 5,
+          "elapsed_ms": 16.69,
+          "top_results": [
+            {
+              "id": 5,
+              "name": "Queenstown",
+              "score": 0.4283,
+              "relevance": 2
+            },
+            {
+              "id": 42,
+              "name": "Moab",
+              "score": 0.3527,
+              "relevance": 0
+            },
+            {
+              "id": 3,
+              "name": "Banff National Park",
+              "score": 0.3204,
+              "relevance": 3
+            },
+            {
+              "id": 23,
+              "name": "Chamonix",
+              "score": 0.3155,
+              "relevance": 3
+            },
+            {
+              "id": 12,
+              "name": "Serengeti National Park",
+              "score": 0.3105,
+              "relevance": 0
+            },
+            {
+              "id": 40,
+              "name": "Everest Base Camp Trek",
+              "score": 0.2952,
+              "relevance": 0
+            },
+            {
+              "id": 43,
+              "name": "Wadi Rum",
+              "score": 0.2686,
+              "relevance": 0
+            },
+            {
+              "id": 39,
+              "name": "Kruger National Park",
+              "score": 0.2658,
+              "relevance": 0
+            },
+            {
+              "id": 22,
+              "name": "Dolomites",
+              "score": 0.2529,
+              "relevance": 2
+            },
+            {
+              "id": 21,
+              "name": "Torres del Paine",
+              "score": 0.2362,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.2,
+            "ndcg@1": 0.4286,
+            "precision@3": 0.6667,
+            "recall@3": 0.4,
+            "ndcg@3": 0.5032,
+            "precision@5": 0.6,
+            "recall@5": 0.6,
+            "ndcg@5": 0.6191,
+            "precision@10": 0.4,
+            "recall@10": 0.8,
+            "ndcg@10": 0.6778,
+            "mrr": 1.0,
+            "map": 0.5722
+          }
+        },
+        {
+          "query_id": "q16",
+          "query": "traditional crafts, markets and haggling",
+          "type": "lexical",
+          "judged_count": 6,
+          "elapsed_ms": 16.84,
+          "top_results": [
+            {
+              "id": 47,
+              "name": "Hoi An",
+              "score": 0.3907,
+              "relevance": 1
+            },
+            {
+              "id": 4,
+              "name": "Marrakesh",
+              "score": 0.3344,
+              "relevance": 3
+            },
+            {
+              "id": 46,
+              "name": "Oaxaca",
+              "score": 0.2764,
+              "relevance": 2
+            },
+            {
+              "id": 2,
+              "name": "Kyoto",
+              "score": 0.2519,
+              "relevance": 0
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.2341,
+              "relevance": 0
+            },
+            {
+              "id": 26,
+              "name": "Singapore",
+              "score": 0.2316,
+              "relevance": 0
+            },
+            {
+              "id": 48,
+              "name": "Jaipur",
+              "score": 0.2292,
+              "relevance": 3
+            },
+            {
+              "id": 25,
+              "name": "Istanbul",
+              "score": 0.2115,
+              "relevance": 2
+            },
+            {
+              "id": 6,
+              "name": "Rome",
+              "score": 0.1769,
+              "relevance": 0
+            },
+            {
+              "id": 15,
+              "name": "Zanzibar",
+              "score": 0.1626,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.1667,
+            "ndcg@1": 0.1429,
+            "precision@3": 1.0,
+            "recall@3": 0.5,
+            "ndcg@3": 0.5355,
+            "precision@5": 0.6,
+            "recall@5": 0.5,
+            "ndcg@5": 0.4739,
+            "precision@10": 0.5,
+            "recall@10": 0.8333,
+            "ndcg@10": 0.6819,
+            "mrr": 1.0,
+            "map": 0.6994
+          }
+        },
+        {
+          "query_id": "q17",
+          "query": "waterfalls, lakes and forest walks",
+          "type": "lexical",
+          "judged_count": 5,
+          "elapsed_ms": 16.93,
+          "top_results": [
+            {
+              "id": 37,
+              "name": "Plitvice Lakes",
+              "score": 0.4469,
+              "relevance": 3
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.4175,
+              "relevance": 0
+            },
+            {
+              "id": 3,
+              "name": "Banff National Park",
+              "score": 0.3966,
+              "relevance": 2
+            },
+            {
+              "id": 8,
+              "name": "Reykjavik",
+              "score": 0.3758,
+              "relevance": 1
+            },
+            {
+              "id": 38,
+              "name": "Yellowstone National Park",
+              "score": 0.351,
+              "relevance": 1
+            },
+            {
+              "id": 12,
+              "name": "Serengeti National Park",
+              "score": 0.3266,
+              "relevance": 0
+            },
+            {
+              "id": 19,
+              "name": "Interlaken",
+              "score": 0.3213,
+              "relevance": 2
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.3123,
+              "relevance": 0
+            },
+            {
+              "id": 41,
+              "name": "La Fortuna and Arenal",
+              "score": 0.2896,
+              "relevance": 0
+            },
+            {
+              "id": 42,
+              "name": "Moab",
+              "score": 0.2876,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.2,
+            "ndcg@1": 1.0,
+            "precision@3": 0.6667,
+            "recall@3": 0.4,
+            "ndcg@3": 0.8179,
+            "precision@5": 0.8,
+            "recall@5": 0.8,
+            "ndcg@5": 0.8312,
+            "precision@10": 0.5,
+            "recall@10": 1.0,
+            "ndcg@10": 0.9204,
+            "mrr": 1.0,
+            "map": 0.7862
+          }
+        },
+        {
+          "query_id": "q18",
+          "query": "I want to learn to cook the local dishes",
+          "type": "paraphrase",
+          "judged_count": 6,
+          "elapsed_ms": 17.28,
+          "top_results": [
+            {
+              "id": 46,
+              "name": "Oaxaca",
+              "score": 0.3475,
+              "relevance": 3
+            },
+            {
+              "id": 47,
+              "name": "Hoi An",
+              "score": 0.2703,
+              "relevance": 3
+            },
+            {
+              "id": 15,
+              "name": "Zanzibar",
+              "score": 0.2531,
+              "relevance": 0
+            },
+            {
+              "id": 2,
+              "name": "Kyoto",
+              "score": 0.2196,
+              "relevance": 2
+            },
+            {
+              "id": 1,
+              "name": "Santorini",
+              "score": 0.2186,
+              "relevance": 0
+            },
+            {
+              "id": 26,
+              "name": "Singapore",
+              "score": 0.2147,
+              "relevance": 0
+            },
+            {
+              "id": 6,
+              "name": "Rome",
+              "score": 0.1876,
+              "relevance": 1
+            },
+            {
+              "id": 29,
+              "name": "Buenos Aires",
+              "score": 0.1828,
+              "relevance": 0
+            },
+            {
+              "id": 9,
+              "name": "Cape Town",
+              "score": 0.1809,
+              "relevance": 0
+            },
+            {
+              "id": 24,
+              "name": "Tokyo",
+              "score": 0.1769,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.1667,
+            "ndcg@1": 1.0,
+            "precision@3": 0.6667,
+            "recall@3": 0.3333,
+            "ndcg@3": 0.8839,
+            "precision@5": 0.6,
+            "recall@5": 0.5,
+            "ndcg@5": 0.8707,
+            "precision@10": 0.4,
+            "recall@10": 0.6667,
+            "ndcg@10": 0.8723,
+            "mrr": 1.0,
+            "map": 0.5536
+          }
+        },
+        {
+          "query_id": "q19",
+          "query": "world class nightlife and bars",
+          "type": "lexical",
+          "judged_count": 6,
+          "elapsed_ms": 16.34,
+          "top_results": [
+            {
+              "id": 11,
+              "name": "Barcelona",
+              "score": 0.3937,
+              "relevance": 3
+            },
+            {
+              "id": 24,
+              "name": "Tokyo",
+              "score": 0.2811,
+              "relevance": 2
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.2372,
+              "relevance": 0
+            },
+            {
+              "id": 5,
+              "name": "Queenstown",
+              "score": 0.2296,
+              "relevance": 0
+            },
+            {
+              "id": 29,
+              "name": "Buenos Aires",
+              "score": 0.2282,
+              "relevance": 3
+            },
+            {
+              "id": 15,
+              "name": "Zanzibar",
+              "score": 0.2216,
+              "relevance": 0
+            },
+            {
+              "id": 26,
+              "name": "Singapore",
+              "score": 0.2152,
+              "relevance": 0
+            },
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.1891,
+              "relevance": 0
+            },
+            {
+              "id": 28,
+              "name": "Dubai",
+              "score": 0.1849,
+              "relevance": 0
+            },
+            {
+              "id": 1,
+              "name": "Santorini",
+              "score": 0.1818,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.1667,
+            "ndcg@1": 1.0,
+            "precision@3": 0.6667,
+            "recall@3": 0.3333,
+            "ndcg@3": 0.6885,
+            "precision@5": 0.6,
+            "recall@5": 0.5,
+            "ndcg@5": 0.7948,
+            "precision@10": 0.3,
+            "recall@10": 0.5,
+            "ndcg@10": 0.7759,
+            "mrr": 1.0,
+            "map": 0.4333
+          }
+        },
+        {
+          "query_id": "q20",
+          "query": "somewhere sacred where faith is part of daily life",
+          "type": "paraphrase",
+          "judged_count": 5,
+          "elapsed_ms": 15.35,
+          "top_results": [
+            {
+              "id": 44,
+              "name": "Varanasi",
+              "score": 0.3907,
+              "relevance": 3
+            },
+            {
+              "id": 2,
+              "name": "Kyoto",
+              "score": 0.3254,
+              "relevance": 2
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.2845,
+              "relevance": 0
+            },
+            {
+              "id": 32,
+              "name": "Angkor Wat",
+              "score": 0.2604,
+              "relevance": 1
+            },
+            {
+              "id": 45,
+              "name": "Paro Valley",
+              "score": 0.234,
+              "relevance": 3
+            },
+            {
+              "id": 1,
+              "name": "Santorini",
+              "score": 0.231,
+              "relevance": 0
+            },
+            {
+              "id": 4,
+              "name": "Marrakesh",
+              "score": 0.2184,
+              "relevance": 0
+            },
+            {
+              "id": 11,
+              "name": "Barcelona",
+              "score": 0.2182,
+              "relevance": 0
+            },
+            {
+              "id": 9,
+              "name": "Cape Town",
+              "score": 0.2152,
+              "relevance": 0
+            },
+            {
+              "id": 47,
+              "name": "Hoi An",
+              "score": 0.2142,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.2,
+            "ndcg@1": 1.0,
+            "precision@3": 0.6667,
+            "recall@3": 0.4,
+            "ndcg@3": 0.6885,
+            "precision@5": 0.8,
+            "recall@5": 0.8,
+            "ndcg@5": 0.876,
+            "precision@10": 0.4,
+            "recall@10": 0.8,
+            "ndcg@10": 0.876,
+            "mrr": 1.0,
+            "map": 0.71
+          }
+        },
+        {
+          "query_id": "q21",
+          "query": "photograph rare animals in their natural habitat",
+          "type": "paraphrase",
+          "judged_count": 6,
+          "elapsed_ms": 14.36,
+          "top_results": [
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.3407,
+              "relevance": 2
+            },
+            {
+              "id": 12,
+              "name": "Serengeti National Park",
+              "score": 0.3209,
+              "relevance": 3
+            },
+            {
+              "id": 38,
+              "name": "Yellowstone National Park",
+              "score": 0.3164,
+              "relevance": 2
+            },
+            {
+              "id": 35,
+              "name": "Galápagos Islands",
+              "score": 0.287,
+              "relevance": 3
+            },
+            {
+              "id": 3,
+              "name": "Banff National Park",
+              "score": 0.2529,
+              "relevance": 1
+            },
+            {
+              "id": 39,
+              "name": "Kruger National Park",
+              "score": 0.2402,
+              "relevance": 3
+            },
+            {
+              "id": 10,
+              "name": "Machu Picchu",
+              "score": 0.2056,
+              "relevance": 0
+            },
+            {
+              "id": 43,
+              "name": "Wadi Rum",
+              "score": 0.1987,
+              "relevance": 0
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.1884,
+              "relevance": 0
+            },
+            {
+              "id": 22,
+              "name": "Dolomites",
+              "score": 0.1642,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.1667,
+            "ndcg@1": 0.4286,
+            "precision@3": 1.0,
+            "recall@3": 0.5,
+            "ndcg@3": 0.5978,
+            "precision@5": 1.0,
+            "recall@5": 0.8333,
+            "ndcg@5": 0.7092,
+            "precision@10": 0.6,
+            "recall@10": 1.0,
+            "ndcg@10": 0.8356,
+            "mrr": 1.0,
+            "map": 1.0
+          }
+        },
+        {
+          "query_id": "q22",
+          "query": "a once in a lifetime trip where money is no object",
+          "type": "paraphrase",
+          "judged_count": 6,
+          "elapsed_ms": 15.63,
+          "top_results": [
+            {
+              "id": 30,
+              "name": "Amsterdam",
+              "score": 0.1969,
+              "relevance": 0
+            },
+            {
+              "id": 24,
+              "name": "Tokyo",
+              "score": 0.1654,
+              "relevance": 0
+            },
+            {
+              "id": 39,
+              "name": "Kruger National Park",
+              "score": 0.1557,
+              "relevance": 0
+            },
+            {
+              "id": 12,
+              "name": "Serengeti National Park",
+              "score": 0.1388,
+              "relevance": 2
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.1365,
+              "relevance": 0
+            },
+            {
+              "id": 26,
+              "name": "Singapore",
+              "score": 0.1235,
+              "relevance": 0
+            },
+            {
+              "id": 18,
+              "name": "El Nido, Palawan",
+              "score": 0.1196,
+              "relevance": 0
+            },
+            {
+              "id": 47,
+              "name": "Hoi An",
+              "score": 0.1177,
+              "relevance": 0
+            },
+            {
+              "id": 29,
+              "name": "Buenos Aires",
+              "score": 0.1081,
+              "relevance": 0
+            },
+            {
+              "id": 11,
+              "name": "Barcelona",
+              "score": 0.1081,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 0.0,
+            "recall@1": 0.0,
+            "ndcg@1": 0.0,
+            "precision@3": 0.0,
+            "recall@3": 0.0,
+            "ndcg@3": 0.0,
+            "precision@5": 0.2,
+            "recall@5": 0.1667,
+            "ndcg@5": 0.0841,
+            "precision@10": 0.1,
+            "recall@10": 0.1667,
+            "ndcg@10": 0.0822,
+            "mrr": 0.25,
+            "map": 0.0417
+          }
+        },
+        {
+          "query_id": "q23",
+          "query": "somewhere very cheap for a long backpacking trip",
+          "type": "paraphrase",
+          "judged_count": 9,
+          "elapsed_ms": 17.18,
+          "top_results": [
+            {
+              "id": 43,
+              "name": "Wadi Rum",
+              "score": 0.2651,
+              "relevance": 0
+            },
+            {
+              "id": 41,
+              "name": "La Fortuna and Arenal",
+              "score": 0.2491,
+              "relevance": 0
+            },
+            {
+              "id": 39,
+              "name": "Kruger National Park",
+              "score": 0.2318,
+              "relevance": 0
+            },
+            {
+              "id": 40,
+              "name": "Everest Base Camp Trek",
+              "score": 0.226,
+              "relevance": 0
+            },
+            {
+              "id": 28,
+              "name": "Dubai",
+              "score": 0.2239,
+              "relevance": 0
+            },
+            {
+              "id": 12,
+              "name": "Serengeti National Park",
+              "score": 0.2115,
+              "relevance": 0
+            },
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.2066,
+              "relevance": 0
+            },
+            {
+              "id": 9,
+              "name": "Cape Town",
+              "score": 0.2061,
+              "relevance": 0
+            },
+            {
+              "id": 23,
+              "name": "Chamonix",
+              "score": 0.1929,
+              "relevance": 0
+            },
+            {
+              "id": 5,
+              "name": "Queenstown",
+              "score": 0.1849,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 0.0,
+            "recall@1": 0.0,
+            "ndcg@1": 0.0,
+            "precision@3": 0.0,
+            "recall@3": 0.0,
+            "ndcg@3": 0.0,
+            "precision@5": 0.0,
+            "recall@5": 0.0,
+            "ndcg@5": 0.0,
+            "precision@10": 0.0,
+            "recall@10": 0.0,
+            "ndcg@10": 0.0,
+            "mrr": 0.0,
+            "map": 0.0
+          }
+        },
+        {
+          "query_id": "q24",
+          "query": "big modern city with excellent public transport",
+          "type": "lexical",
+          "judged_count": 5,
+          "elapsed_ms": 17.28,
+          "top_results": [
+            {
+              "id": 24,
+              "name": "Tokyo",
+              "score": 0.3901,
+              "relevance": 3
+            },
+            {
+              "id": 26,
+              "name": "Singapore",
+              "score": 0.351,
+              "relevance": 3
+            },
+            {
+              "id": 27,
+              "name": "Lisbon",
+              "score": 0.2845,
+              "relevance": 0
+            },
+            {
+              "id": 28,
+              "name": "Dubai",
+              "score": 0.2814,
+              "relevance": 2
+            },
+            {
+              "id": 34,
+              "name": "Athens",
+              "score": 0.2654,
+              "relevance": 0
+            },
+            {
+              "id": 32,
+              "name": "Angkor Wat",
+              "score": 0.2434,
+              "relevance": 0
+            },
+            {
+              "id": 30,
+              "name": "Amsterdam",
+              "score": 0.2405,
+              "relevance": 2
+            },
+            {
+              "id": 11,
+              "name": "Barcelona",
+              "score": 0.2381,
+              "relevance": 1
+            },
+            {
+              "id": 48,
+              "name": "Jaipur",
+              "score": 0.2338,
+              "relevance": 0
+            },
+            {
+              "id": 29,
+              "name": "Buenos Aires",
+              "score": 0.2321,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.2,
+            "ndcg@1": 1.0,
+            "precision@3": 0.6667,
+            "recall@3": 0.4,
+            "ndcg@3": 0.8839,
+            "precision@5": 0.6,
+            "recall@5": 0.6,
+            "ndcg@5": 0.8707,
+            "precision@10": 0.5,
+            "recall@10": 1.0,
+            "ndcg@10": 0.9609,
+            "mrr": 1.0,
+            "map": 0.7893
+          }
+        },
+        {
+          "query_id": "q25",
+          "query": "wine tasting and vineyards",
+          "type": "lexical",
+          "judged_count": 5,
+          "elapsed_ms": 17.49,
+          "top_results": [
+            {
+              "id": 11,
+              "name": "Barcelona",
+              "score": 0.3224,
+              "relevance": 1
+            },
+            {
+              "id": 1,
+              "name": "Santorini",
+              "score": 0.3106,
+              "relevance": 2
+            },
+            {
+              "id": 9,
+              "name": "Cape Town",
+              "score": 0.2724,
+              "relevance": 3
+            },
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.2581,
+              "relevance": 0
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.2296,
+              "relevance": 0
+            },
+            {
+              "id": 43,
+              "name": "Wadi Rum",
+              "score": 0.2256,
+              "relevance": 0
+            },
+            {
+              "id": 29,
+              "name": "Buenos Aires",
+              "score": 0.2246,
+              "relevance": 2
+            },
+            {
+              "id": 47,
+              "name": "Hoi An",
+              "score": 0.2029,
+              "relevance": 0
+            },
+            {
+              "id": 46,
+              "name": "Oaxaca",
+              "score": 0.1828,
+              "relevance": 0
+            },
+            {
+              "id": 8,
+              "name": "Reykjavik",
+              "score": 0.1816,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.2,
+            "ndcg@1": 0.1429,
+            "precision@3": 1.0,
+            "recall@3": 0.6,
+            "ndcg@3": 0.6151,
+            "precision@5": 0.6,
+            "recall@5": 0.6,
+            "ndcg@5": 0.5703,
+            "precision@10": 0.4,
+            "recall@10": 0.8,
+            "ndcg@10": 0.6595,
+            "mrr": 1.0,
+            "map": 0.7143
+          }
+        },
+        {
+          "query_id": "q26",
+          "query": "get away from the tourist trail to somewhere few people go",
+          "type": "paraphrase",
+          "judged_count": 7,
+          "elapsed_ms": 15.96,
+          "top_results": [
+            {
+              "id": 12,
+              "name": "Serengeti National Park",
+              "score": 0.3362,
+              "relevance": 0
+            },
+            {
+              "id": 39,
+              "name": "Kruger National Park",
+              "score": 0.2971,
+              "relevance": 0
+            },
+            {
+              "id": 5,
+              "name": "Queenstown",
+              "score": 0.2606,
+              "relevance": 0
+            },
+            {
+              "id": 42,
+              "name": "Moab",
+              "score": 0.2395,
+              "relevance": 0
+            },
+            {
+              "id": 24,
+              "name": "Tokyo",
+              "score": 0.2383,
+              "relevance": 0
+            },
+            {
+              "id": 14,
+              "name": "Phuket",
+              "score": 0.2362,
+              "relevance": 0
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.2319,
+              "relevance": 2
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.2312,
+              "relevance": 0
+            },
+            {
+              "id": 38,
+              "name": "Yellowstone National Park",
+              "score": 0.2269,
+              "relevance": 0
+            },
+            {
+              "id": 18,
+              "name": "El Nido, Palawan",
+              "score": 0.2182,
+              "relevance": 2
+            }
+          ],
+          "scores": {
+            "precision@1": 0.0,
+            "recall@1": 0.0,
+            "ndcg@1": 0.0,
+            "precision@3": 0.0,
+            "recall@3": 0.0,
+            "ndcg@3": 0.0,
+            "precision@5": 0.0,
+            "recall@5": 0.0,
+            "ndcg@5": 0.0,
+            "precision@10": 0.2,
+            "recall@10": 0.2857,
+            "ndcg@10": 0.1163,
+            "mrr": 0.1429,
+            "map": 0.049
+          }
+        }
+      ]
+    },
+    "tfidf": {
+      "model": "tfidf",
+      "label": "TF-IDF (keyword baseline)",
+      "query_count": 26,
+      "overall": {
+        "precision@1": 0.8846,
+        "recall@1": 0.1644,
+        "ndcg@1": 0.7967,
+        "precision@3": 0.6539,
+        "recall@3": 0.3646,
+        "ndcg@3": 0.653,
+        "precision@5": 0.5231,
+        "recall@5": 0.4726,
+        "ndcg@5": 0.6492,
+        "precision@10": 0.3462,
+        "recall@10": 0.6028,
+        "ndcg@10": 0.674,
+        "mrr": 0.8923,
+        "map": 0.5166
+      },
+      "by_query_type": {
+        "lexical": {
+          "query_count": 18,
+          "precision@1": 1.0,
+          "recall@1": 0.1919,
+          "ndcg@1": 0.9365,
+          "precision@3": 0.7963,
+          "recall@3": 0.4545,
+          "ndcg@3": 0.7986,
+          "precision@5": 0.6333,
+          "recall@5": 0.5871,
+          "ndcg@5": 0.798,
+          "precision@10": 0.4167,
+          "recall@10": 0.742,
+          "ndcg@10": 0.8306,
+          "mrr": 1.0,
+          "map": 0.6535
+        },
+        "paraphrase": {
+          "query_count": 8,
+          "precision@1": 0.625,
+          "recall@1": 0.1026,
+          "ndcg@1": 0.4821,
+          "precision@3": 0.3333,
+          "recall@3": 0.1623,
+          "ndcg@3": 0.3254,
+          "precision@5": 0.275,
+          "recall@5": 0.2149,
+          "ndcg@5": 0.3145,
+          "precision@10": 0.1875,
+          "recall@10": 0.2895,
+          "ndcg@10": 0.3216,
+          "mrr": 0.65,
+          "map": 0.2086
+        }
+      },
+      "latency_ms": {
+        "mean": 4.94,
+        "min": 2.19,
+        "max": 43.88
+      },
+      "per_query": [
+        {
+          "query_id": "q01",
+          "query": "quiet beaches with great seafood and no big crowds",
+          "type": "lexical",
+          "judged_count": 7,
+          "elapsed_ms": 43.88,
+          "top_results": [
+            {
+              "id": 1,
+              "name": "Santorini",
+              "score": 0.1538,
+              "relevance": 2
+            },
+            {
+              "id": 12,
+              "name": "Serengeti National Park",
+              "score": 0.1288,
+              "relevance": 0
+            },
+            {
+              "id": 15,
+              "name": "Zanzibar",
+              "score": 0.1284,
+              "relevance": 3
+            },
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.1189,
+              "relevance": 3
+            },
+            {
+              "id": 18,
+              "name": "El Nido, Palawan",
+              "score": 0.0925,
+              "relevance": 3
+            },
+            {
+              "id": 13,
+              "name": "Maldives",
+              "score": 0.0844,
+              "relevance": 2
+            },
+            {
+              "id": 39,
+              "name": "Kruger National Park",
+              "score": 0.0554,
+              "relevance": 0
+            },
+            {
+              "id": 14,
+              "name": "Phuket",
+              "score": 0.0514,
+              "relevance": 1
+            },
+            {
+              "id": 33,
+              "name": "Pyramids of Giza",
+              "score": 0.0427,
+              "relevance": 0
+            },
+            {
+              "id": 9,
+              "name": "Cape Town",
+              "score": 0.0329,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.1429,
+            "ndcg@1": 0.4286,
+            "precision@3": 0.6667,
+            "recall@3": 0.2857,
+            "ndcg@3": 0.4358,
+            "precision@5": 0.8,
+            "recall@5": 0.5714,
+            "ndcg@5": 0.7037,
+            "precision@10": 0.6,
+            "recall@10": 0.8571,
+            "ndcg@10": 0.7535,
+            "mrr": 1.0,
+            "map": 0.6857
+          }
+        },
+        {
+          "query_id": "q02",
+          "query": "somewhere peaceful by the sea to switch off completely",
+          "type": "paraphrase",
+          "judged_count": 7,
+          "elapsed_ms": 3.34,
+          "top_results": [
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.0951,
+              "relevance": 2
+            },
+            {
+              "id": 4,
+              "name": "Marrakesh",
+              "score": 0.0717,
+              "relevance": 0
+            },
+            {
+              "id": 2,
+              "name": "Kyoto",
+              "score": 0.0687,
+              "relevance": 0
+            },
+            {
+              "id": 35,
+              "name": "Galápagos Islands",
+              "score": 0.0594,
+              "relevance": 0
+            },
+            {
+              "id": 28,
+              "name": "Dubai",
+              "score": 0.0584,
+              "relevance": 0
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 30,
+              "name": "Amsterdam",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 32,
+              "name": "Angkor Wat",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 34,
+              "name": "Athens",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.0,
+              "relevance": 1
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.1429,
+            "ndcg@1": 0.4286,
+            "precision@3": 0.3333,
+            "recall@3": 0.1429,
+            "ndcg@3": 0.2323,
+            "precision@5": 0.2,
+            "recall@5": 0.1429,
+            "ndcg@5": 0.1952,
+            "precision@10": 0.2,
+            "recall@10": 0.2857,
+            "ndcg@10": 0.2048,
+            "mrr": 1.0,
+            "map": 0.1714
+          }
+        },
+        {
+          "query_id": "q03",
+          "query": "ancient ruins and museums with amazing local food",
+          "type": "lexical",
+          "judged_count": 8,
+          "elapsed_ms": 2.26,
+          "top_results": [
+            {
+              "id": 6,
+              "name": "Rome",
+              "score": 0.2489,
+              "relevance": 3
+            },
+            {
+              "id": 34,
+              "name": "Athens",
+              "score": 0.1827,
+              "relevance": 3
+            },
+            {
+              "id": 46,
+              "name": "Oaxaca",
+              "score": 0.1478,
+              "relevance": 2
+            },
+            {
+              "id": 10,
+              "name": "Machu Picchu",
+              "score": 0.1163,
+              "relevance": 1
+            },
+            {
+              "id": 33,
+              "name": "Pyramids of Giza",
+              "score": 0.0948,
+              "relevance": 2
+            },
+            {
+              "id": 31,
+              "name": "Petra",
+              "score": 0.0938,
+              "relevance": 1
+            },
+            {
+              "id": 32,
+              "name": "Angkor Wat",
+              "score": 0.0913,
+              "relevance": 1
+            },
+            {
+              "id": 30,
+              "name": "Amsterdam",
+              "score": 0.0723,
+              "relevance": 0
+            },
+            {
+              "id": 14,
+              "name": "Phuket",
+              "score": 0.0496,
+              "relevance": 0
+            },
+            {
+              "id": 24,
+              "name": "Tokyo",
+              "score": 0.0428,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.125,
+            "ndcg@1": 1.0,
+            "precision@3": 1.0,
+            "recall@3": 0.375,
+            "ndcg@3": 1.0,
+            "precision@5": 1.0,
+            "recall@5": 0.625,
+            "ndcg@5": 0.944,
+            "precision@10": 0.7,
+            "recall@10": 0.875,
+            "ndcg@10": 0.9281,
+            "mrr": 1.0,
+            "map": 0.875
+          }
+        },
+        {
+          "query_id": "q04",
+          "query": "extreme adventure sports in the mountains",
+          "type": "lexical",
+          "judged_count": 8,
+          "elapsed_ms": 2.19,
+          "top_results": [
+            {
+              "id": 5,
+              "name": "Queenstown",
+              "score": 0.2293,
+              "relevance": 3
+            },
+            {
+              "id": 9,
+              "name": "Cape Town",
+              "score": 0.0607,
+              "relevance": 0
+            },
+            {
+              "id": 40,
+              "name": "Everest Base Camp Trek",
+              "score": 0.0372,
+              "relevance": 2
+            },
+            {
+              "id": 4,
+              "name": "Marrakesh",
+              "score": 0.037,
+              "relevance": 0
+            },
+            {
+              "id": 10,
+              "name": "Machu Picchu",
+              "score": 0.0364,
+              "relevance": 0
+            },
+            {
+              "id": 3,
+              "name": "Banff National Park",
+              "score": 0.0229,
+              "relevance": 1
+            },
+            {
+              "id": 42,
+              "name": "Moab",
+              "score": 0.0218,
+              "relevance": 2
+            },
+            {
+              "id": 43,
+              "name": "Wadi Rum",
+              "score": 0.0215,
+              "relevance": 0
+            },
+            {
+              "id": 41,
+              "name": "La Fortuna and Arenal",
+              "score": 0.0204,
+              "relevance": 0
+            },
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.0,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.125,
+            "ndcg@1": 1.0,
+            "precision@3": 0.6667,
+            "recall@3": 0.25,
+            "ndcg@3": 0.6581,
+            "precision@5": 0.4,
+            "recall@5": 0.25,
+            "ndcg@5": 0.5531,
+            "precision@10": 0.4,
+            "recall@10": 0.5,
+            "ndcg@10": 0.6019,
+            "mrr": 1.0,
+            "map": 0.3423
+          }
+        },
+        {
+          "query_id": "q05",
+          "query": "wildlife safari and unspoiled nature",
+          "type": "lexical",
+          "judged_count": 5,
+          "elapsed_ms": 2.19,
+          "top_results": [
+            {
+              "id": 12,
+              "name": "Serengeti National Park",
+              "score": 0.1918,
+              "relevance": 3
+            },
+            {
+              "id": 39,
+              "name": "Kruger National Park",
+              "score": 0.1682,
+              "relevance": 3
+            },
+            {
+              "id": 35,
+              "name": "Galápagos Islands",
+              "score": 0.1023,
+              "relevance": 2
+            },
+            {
+              "id": 8,
+              "name": "Reykjavik",
+              "score": 0.0856,
+              "relevance": 0
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.0825,
+              "relevance": 2
+            },
+            {
+              "id": 3,
+              "name": "Banff National Park",
+              "score": 0.0823,
+              "relevance": 0
+            },
+            {
+              "id": 38,
+              "name": "Yellowstone National Park",
+              "score": 0.0821,
+              "relevance": 1
+            },
+            {
+              "id": 37,
+              "name": "Plitvice Lakes",
+              "score": 0.0631,
+              "relevance": 0
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.063,
+              "relevance": 0
+            },
+            {
+              "id": 28,
+              "name": "Dubai",
+              "score": 0.0552,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.2,
+            "ndcg@1": 1.0,
+            "precision@3": 1.0,
+            "recall@3": 0.6,
+            "ndcg@3": 1.0,
+            "precision@5": 0.8,
+            "recall@5": 0.8,
+            "ndcg@5": 0.9645,
+            "precision@10": 0.5,
+            "recall@10": 1.0,
+            "ndcg@10": 0.9873,
+            "mrr": 1.0,
+            "map": 0.9029
+          }
+        },
+        {
+          "query_id": "q06",
+          "query": "romantic getaway with beautiful sunsets",
+          "type": "lexical",
+          "judged_count": 7,
+          "elapsed_ms": 2.57,
+          "top_results": [
+            {
+              "id": 1,
+              "name": "Santorini",
+              "score": 0.2464,
+              "relevance": 3
+            },
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 30,
+              "name": "Amsterdam",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 32,
+              "name": "Angkor Wat",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 34,
+              "name": "Athens",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.0,
+              "relevance": 2
+            },
+            {
+              "id": 3,
+              "name": "Banff National Park",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 11,
+              "name": "Barcelona",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 29,
+              "name": "Buenos Aires",
+              "score": 0.0,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.1429,
+            "ndcg@1": 1.0,
+            "precision@3": 0.3333,
+            "recall@3": 0.1429,
+            "ndcg@3": 0.5419,
+            "precision@5": 0.2,
+            "recall@5": 0.1429,
+            "ndcg@5": 0.4796,
+            "precision@10": 0.2,
+            "recall@10": 0.2857,
+            "ndcg@10": 0.5234,
+            "mrr": 1.0,
+            "map": 0.1837
+          }
+        },
+        {
+          "query_id": "q07",
+          "query": "cheap trip in Asia with amazing street food",
+          "type": "lexical",
+          "judged_count": 7,
+          "elapsed_ms": 4.96,
+          "top_results": [
+            {
+              "id": 14,
+              "name": "Phuket",
+              "score": 0.2122,
+              "relevance": 3
+            },
+            {
+              "id": 25,
+              "name": "Istanbul",
+              "score": 0.1667,
+              "relevance": 1
+            },
+            {
+              "id": 46,
+              "name": "Oaxaca",
+              "score": 0.0936,
+              "relevance": 0
+            },
+            {
+              "id": 47,
+              "name": "Hoi An",
+              "score": 0.0893,
+              "relevance": 3
+            },
+            {
+              "id": 4,
+              "name": "Marrakesh",
+              "score": 0.086,
+              "relevance": 0
+            },
+            {
+              "id": 26,
+              "name": "Singapore",
+              "score": 0.072,
+              "relevance": 0
+            },
+            {
+              "id": 34,
+              "name": "Athens",
+              "score": 0.0488,
+              "relevance": 0
+            },
+            {
+              "id": 32,
+              "name": "Angkor Wat",
+              "score": 0.0423,
+              "relevance": 2
+            },
+            {
+              "id": 18,
+              "name": "El Nido, Palawan",
+              "score": 0.0405,
+              "relevance": 0
+            },
+            {
+              "id": 24,
+              "name": "Tokyo",
+              "score": 0.0385,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.1429,
+            "ndcg@1": 1.0,
+            "precision@3": 0.6667,
+            "recall@3": 0.2857,
+            "ndcg@3": 0.5908,
+            "precision@5": 0.6,
+            "recall@5": 0.4286,
+            "ndcg@5": 0.6927,
+            "precision@10": 0.4,
+            "recall@10": 0.5714,
+            "ndcg@10": 0.6912,
+            "mrr": 1.0,
+            "map": 0.4643
+          }
+        },
+        {
+          "query_id": "q08",
+          "query": "trekking at high altitude in the Himalayas",
+          "type": "lexical",
+          "judged_count": 5,
+          "elapsed_ms": 3.28,
+          "top_results": [
+            {
+              "id": 40,
+              "name": "Everest Base Camp Trek",
+              "score": 0.1795,
+              "relevance": 3
+            },
+            {
+              "id": 20,
+              "name": "Hunza Valley",
+              "score": 0.0883,
+              "relevance": 3
+            },
+            {
+              "id": 10,
+              "name": "Machu Picchu",
+              "score": 0.0734,
+              "relevance": 1
+            },
+            {
+              "id": 21,
+              "name": "Torres del Paine",
+              "score": 0.0313,
+              "relevance": 1
+            },
+            {
+              "id": 43,
+              "name": "Wadi Rum",
+              "score": 0.0296,
+              "relevance": 0
+            },
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 30,
+              "name": "Amsterdam",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 32,
+              "name": "Angkor Wat",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 34,
+              "name": "Athens",
+              "score": 0.0,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.2,
+            "ndcg@1": 1.0,
+            "precision@3": 1.0,
+            "recall@3": 0.6,
+            "ndcg@3": 0.9226,
+            "precision@5": 0.8,
+            "recall@5": 0.8,
+            "ndcg@5": 0.899,
+            "precision@10": 0.4,
+            "recall@10": 0.8,
+            "ndcg@10": 0.899,
+            "mrr": 1.0,
+            "map": 0.8
+          }
+        },
+        {
+          "query_id": "q09",
+          "query": "a city break with great architecture and walkable streets",
+          "type": "lexical",
+          "judged_count": 8,
+          "elapsed_ms": 3.41,
+          "top_results": [
+            {
+              "id": 27,
+              "name": "Lisbon",
+              "score": 0.1179,
+              "relevance": 3
+            },
+            {
+              "id": 11,
+              "name": "Barcelona",
+              "score": 0.1152,
+              "relevance": 3
+            },
+            {
+              "id": 6,
+              "name": "Rome",
+              "score": 0.084,
+              "relevance": 2
+            },
+            {
+              "id": 12,
+              "name": "Serengeti National Park",
+              "score": 0.0824,
+              "relevance": 0
+            },
+            {
+              "id": 30,
+              "name": "Amsterdam",
+              "score": 0.0756,
+              "relevance": 3
+            },
+            {
+              "id": 33,
+              "name": "Pyramids of Giza",
+              "score": 0.0674,
+              "relevance": 0
+            },
+            {
+              "id": 26,
+              "name": "Singapore",
+              "score": 0.0646,
+              "relevance": 1
+            },
+            {
+              "id": 48,
+              "name": "Jaipur",
+              "score": 0.0567,
+              "relevance": 0
+            },
+            {
+              "id": 28,
+              "name": "Dubai",
+              "score": 0.0377,
+              "relevance": 0
+            },
+            {
+              "id": 29,
+              "name": "Buenos Aires",
+              "score": 0.037,
+              "relevance": 1
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.125,
+            "ndcg@1": 1.0,
+            "precision@3": 1.0,
+            "recall@3": 0.375,
+            "ndcg@3": 0.8659,
+            "precision@5": 0.8,
+            "recall@5": 0.5,
+            "ndcg@5": 0.8996,
+            "precision@10": 0.6,
+            "recall@10": 0.75,
+            "ndcg@10": 0.8842,
+            "mrr": 1.0,
+            "map": 0.6393
+          }
+        },
+        {
+          "query_id": "q10",
+          "query": "see the northern lights and dramatic volcanic landscapes",
+          "type": "lexical",
+          "judged_count": 2,
+          "elapsed_ms": 3.83,
+          "top_results": [
+            {
+              "id": 8,
+              "name": "Reykjavik",
+              "score": 0.2978,
+              "relevance": 3
+            },
+            {
+              "id": 1,
+              "name": "Santorini",
+              "score": 0.0926,
+              "relevance": 1
+            },
+            {
+              "id": 35,
+              "name": "Galápagos Islands",
+              "score": 0.0537,
+              "relevance": 0
+            },
+            {
+              "id": 17,
+              "name": "Tulum",
+              "score": 0.0285,
+              "relevance": 0
+            },
+            {
+              "id": 41,
+              "name": "La Fortuna and Arenal",
+              "score": 0.028,
+              "relevance": 0
+            },
+            {
+              "id": 5,
+              "name": "Queenstown",
+              "score": 0.0267,
+              "relevance": 0
+            },
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 30,
+              "name": "Amsterdam",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 32,
+              "name": "Angkor Wat",
+              "score": 0.0,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.5,
+            "ndcg@1": 1.0,
+            "precision@3": 0.6667,
+            "recall@3": 1.0,
+            "ndcg@3": 1.0,
+            "precision@5": 0.4,
+            "recall@5": 1.0,
+            "ndcg@5": 1.0,
+            "precision@10": 0.2,
+            "recall@10": 1.0,
+            "ndcg@10": 1.0,
+            "mrr": 1.0,
+            "map": 1.0
+          }
+        },
+        {
+          "query_id": "q11",
+          "query": "learn about Buddhist temples and monasteries",
+          "type": "lexical",
+          "judged_count": 4,
+          "elapsed_ms": 4.87,
+          "top_results": [
+            {
+              "id": 45,
+              "name": "Paro Valley",
+              "score": 0.1527,
+              "relevance": 3
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.0963,
+              "relevance": 0
+            },
+            {
+              "id": 2,
+              "name": "Kyoto",
+              "score": 0.0955,
+              "relevance": 3
+            },
+            {
+              "id": 40,
+              "name": "Everest Base Camp Trek",
+              "score": 0.0513,
+              "relevance": 0
+            },
+            {
+              "id": 32,
+              "name": "Angkor Wat",
+              "score": 0.0451,
+              "relevance": 2
+            },
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 30,
+              "name": "Amsterdam",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 34,
+              "name": "Athens",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 3,
+              "name": "Banff National Park",
+              "score": 0.0,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.25,
+            "ndcg@1": 1.0,
+            "precision@3": 0.6667,
+            "recall@3": 0.5,
+            "ndcg@3": 0.8129,
+            "precision@5": 0.6,
+            "recall@5": 0.75,
+            "ndcg@5": 0.8736,
+            "precision@10": 0.3,
+            "recall@10": 0.75,
+            "ndcg@10": 0.8736,
+            "mrr": 1.0,
+            "map": 0.5667
+          }
+        },
+        {
+          "query_id": "q12",
+          "query": "desert landscapes and camping under the stars",
+          "type": "lexical",
+          "judged_count": 5,
+          "elapsed_ms": 2.62,
+          "top_results": [
+            {
+              "id": 43,
+              "name": "Wadi Rum",
+              "score": 0.0958,
+              "relevance": 3
+            },
+            {
+              "id": 24,
+              "name": "Tokyo",
+              "score": 0.0584,
+              "relevance": 0
+            },
+            {
+              "id": 28,
+              "name": "Dubai",
+              "score": 0.0569,
+              "relevance": 1
+            },
+            {
+              "id": 8,
+              "name": "Reykjavik",
+              "score": 0.0549,
+              "relevance": 0
+            },
+            {
+              "id": 42,
+              "name": "Moab",
+              "score": 0.0546,
+              "relevance": 2
+            },
+            {
+              "id": 33,
+              "name": "Pyramids of Giza",
+              "score": 0.0492,
+              "relevance": 1
+            },
+            {
+              "id": 4,
+              "name": "Marrakesh",
+              "score": 0.0285,
+              "relevance": 2
+            },
+            {
+              "id": 31,
+              "name": "Petra",
+              "score": 0.0278,
+              "relevance": 0
+            },
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.0,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.2,
+            "ndcg@1": 1.0,
+            "precision@3": 0.6667,
+            "recall@3": 0.4,
+            "ndcg@3": 0.7217,
+            "precision@5": 0.6,
+            "recall@5": 0.6,
+            "ndcg@5": 0.7726,
+            "precision@10": 0.5,
+            "recall@10": 1.0,
+            "ndcg@10": 0.8935,
+            "mrr": 1.0,
+            "map": 0.7295
+          }
+        },
+        {
+          "query_id": "q13",
+          "query": "a safe destination that is easy to travel with children",
+          "type": "paraphrase",
+          "judged_count": 5,
+          "elapsed_ms": 2.32,
+          "top_results": [
+            {
+              "id": 26,
+              "name": "Singapore",
+              "score": 0.1153,
+              "relevance": 3
+            },
+            {
+              "id": 19,
+              "name": "Interlaken",
+              "score": 0.1098,
+              "relevance": 0
+            },
+            {
+              "id": 14,
+              "name": "Phuket",
+              "score": 0.0549,
+              "relevance": 0
+            },
+            {
+              "id": 12,
+              "name": "Serengeti National Park",
+              "score": 0.0525,
+              "relevance": 0
+            },
+            {
+              "id": 4,
+              "name": "Marrakesh",
+              "score": 0.0291,
+              "relevance": 0
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.0281,
+              "relevance": 0
+            },
+            {
+              "id": 32,
+              "name": "Angkor Wat",
+              "score": 0.0277,
+              "relevance": 0
+            },
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.0267,
+              "relevance": 0
+            },
+            {
+              "id": 18,
+              "name": "El Nido, Palawan",
+              "score": 0.0265,
+              "relevance": 0
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.0,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.2,
+            "ndcg@1": 1.0,
+            "precision@3": 0.3333,
+            "recall@3": 0.2,
+            "ndcg@3": 0.6735,
+            "precision@5": 0.2,
+            "recall@5": 0.2,
+            "ndcg@5": 0.6244,
+            "precision@10": 0.1,
+            "recall@10": 0.2,
+            "ndcg@10": 0.6244,
+            "mrr": 1.0,
+            "map": 0.2
+          }
+        },
+        {
+          "query_id": "q14",
+          "query": "snorkelling and diving on coral reefs",
+          "type": "lexical",
+          "judged_count": 6,
+          "elapsed_ms": 2.2,
+          "top_results": [
+            {
+              "id": 13,
+              "name": "Maldives",
+              "score": 0.2886,
+              "relevance": 3
+            },
+            {
+              "id": 18,
+              "name": "El Nido, Palawan",
+              "score": 0.1165,
+              "relevance": 3
+            },
+            {
+              "id": 35,
+              "name": "Galápagos Islands",
+              "score": 0.0944,
+              "relevance": 3
+            },
+            {
+              "id": 15,
+              "name": "Zanzibar",
+              "score": 0.0889,
+              "relevance": 2
+            },
+            {
+              "id": 17,
+              "name": "Tulum",
+              "score": 0.0752,
+              "relevance": 1
+            },
+            {
+              "id": 14,
+              "name": "Phuket",
+              "score": 0.0295,
+              "relevance": 2
+            },
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 30,
+              "name": "Amsterdam",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 32,
+              "name": "Angkor Wat",
+              "score": 0.0,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.1667,
+            "ndcg@1": 1.0,
+            "precision@3": 1.0,
+            "recall@3": 0.5,
+            "ndcg@3": 1.0,
+            "precision@5": 1.0,
+            "recall@5": 0.8333,
+            "ndcg@5": 0.9555,
+            "precision@10": 0.6,
+            "recall@10": 1.0,
+            "ndcg@10": 0.9965,
+            "mrr": 1.0,
+            "map": 1.0
+          }
+        },
+        {
+          "query_id": "q15",
+          "query": "skiing and snowboarding holiday",
+          "type": "lexical",
+          "judged_count": 5,
+          "elapsed_ms": 2.19,
+          "top_results": [
+            {
+              "id": 3,
+              "name": "Banff National Park",
+              "score": 0.1708,
+              "relevance": 3
+            },
+            {
+              "id": 22,
+              "name": "Dolomites",
+              "score": 0.168,
+              "relevance": 2
+            },
+            {
+              "id": 5,
+              "name": "Queenstown",
+              "score": 0.1653,
+              "relevance": 2
+            },
+            {
+              "id": 23,
+              "name": "Chamonix",
+              "score": 0.1264,
+              "relevance": 3
+            },
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 30,
+              "name": "Amsterdam",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 32,
+              "name": "Angkor Wat",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 34,
+              "name": "Athens",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.0,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.2,
+            "ndcg@1": 1.0,
+            "precision@3": 1.0,
+            "recall@3": 0.6,
+            "ndcg@3": 0.8046,
+            "precision@5": 0.8,
+            "recall@5": 0.8,
+            "ndcg@5": 0.8724,
+            "precision@10": 0.4,
+            "recall@10": 0.8,
+            "ndcg@10": 0.8724,
+            "mrr": 1.0,
+            "map": 0.8
+          }
+        },
+        {
+          "query_id": "q16",
+          "query": "traditional crafts, markets and haggling",
+          "type": "lexical",
+          "judged_count": 6,
+          "elapsed_ms": 4.31,
+          "top_results": [
+            {
+              "id": 4,
+              "name": "Marrakesh",
+              "score": 0.1417,
+              "relevance": 3
+            },
+            {
+              "id": 2,
+              "name": "Kyoto",
+              "score": 0.137,
+              "relevance": 0
+            },
+            {
+              "id": 46,
+              "name": "Oaxaca",
+              "score": 0.095,
+              "relevance": 2
+            },
+            {
+              "id": 14,
+              "name": "Phuket",
+              "score": 0.0448,
+              "relevance": 0
+            },
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 30,
+              "name": "Amsterdam",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 32,
+              "name": "Angkor Wat",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 34,
+              "name": "Athens",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.0,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.1667,
+            "ndcg@1": 1.0,
+            "precision@3": 0.6667,
+            "recall@3": 0.3333,
+            "ndcg@3": 0.6581,
+            "precision@5": 0.4,
+            "recall@5": 0.3333,
+            "ndcg@5": 0.5824,
+            "precision@10": 0.2,
+            "recall@10": 0.3333,
+            "ndcg@10": 0.5685,
+            "mrr": 1.0,
+            "map": 0.2778
+          }
+        },
+        {
+          "query_id": "q17",
+          "query": "waterfalls, lakes and forest walks",
+          "type": "lexical",
+          "judged_count": 5,
+          "elapsed_ms": 4.59,
+          "top_results": [
+            {
+              "id": 37,
+              "name": "Plitvice Lakes",
+              "score": 0.2465,
+              "relevance": 3
+            },
+            {
+              "id": 19,
+              "name": "Interlaken",
+              "score": 0.0899,
+              "relevance": 2
+            },
+            {
+              "id": 8,
+              "name": "Reykjavik",
+              "score": 0.0632,
+              "relevance": 1
+            },
+            {
+              "id": 3,
+              "name": "Banff National Park",
+              "score": 0.0622,
+              "relevance": 2
+            },
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.0422,
+              "relevance": 0
+            },
+            {
+              "id": 39,
+              "name": "Kruger National Park",
+              "score": 0.0422,
+              "relevance": 0
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.0333,
+              "relevance": 0
+            },
+            {
+              "id": 22,
+              "name": "Dolomites",
+              "score": 0.0327,
+              "relevance": 0
+            },
+            {
+              "id": 41,
+              "name": "La Fortuna and Arenal",
+              "score": 0.0295,
+              "relevance": 0
+            },
+            {
+              "id": 21,
+              "name": "Torres del Paine",
+              "score": 0.0294,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.2,
+            "ndcg@1": 1.0,
+            "precision@3": 1.0,
+            "recall@3": 0.6,
+            "ndcg@3": 0.9038,
+            "precision@5": 0.8,
+            "recall@5": 0.8,
+            "ndcg@5": 0.9531,
+            "precision@10": 0.4,
+            "recall@10": 0.8,
+            "ndcg@10": 0.9531,
+            "mrr": 1.0,
+            "map": 0.8
+          }
+        },
+        {
+          "query_id": "q18",
+          "query": "I want to learn to cook the local dishes",
+          "type": "paraphrase",
+          "judged_count": 6,
+          "elapsed_ms": 3.21,
+          "top_results": [
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 30,
+              "name": "Amsterdam",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 32,
+              "name": "Angkor Wat",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 34,
+              "name": "Athens",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 3,
+              "name": "Banff National Park",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 11,
+              "name": "Barcelona",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 29,
+              "name": "Buenos Aires",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 9,
+              "name": "Cape Town",
+              "score": 0.0,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 0.0,
+            "recall@1": 0.0,
+            "ndcg@1": 0.0,
+            "precision@3": 0.0,
+            "recall@3": 0.0,
+            "ndcg@3": 0.0,
+            "precision@5": 0.0,
+            "recall@5": 0.0,
+            "ndcg@5": 0.0,
+            "precision@10": 0.0,
+            "recall@10": 0.0,
+            "ndcg@10": 0.0,
+            "mrr": 0.0,
+            "map": 0.0
+          }
+        },
+        {
+          "query_id": "q19",
+          "query": "world class nightlife and bars",
+          "type": "lexical",
+          "judged_count": 6,
+          "elapsed_ms": 2.94,
+          "top_results": [
+            {
+              "id": 30,
+              "name": "Amsterdam",
+              "score": 0.1355,
+              "relevance": 2
+            },
+            {
+              "id": 11,
+              "name": "Barcelona",
+              "score": 0.1062,
+              "relevance": 3
+            },
+            {
+              "id": 3,
+              "name": "Banff National Park",
+              "score": 0.0982,
+              "relevance": 0
+            },
+            {
+              "id": 22,
+              "name": "Dolomites",
+              "score": 0.0965,
+              "relevance": 0
+            },
+            {
+              "id": 13,
+              "name": "Maldives",
+              "score": 0.0946,
+              "relevance": 0
+            },
+            {
+              "id": 24,
+              "name": "Tokyo",
+              "score": 0.0579,
+              "relevance": 2
+            },
+            {
+              "id": 29,
+              "name": "Buenos Aires",
+              "score": 0.0537,
+              "relevance": 3
+            },
+            {
+              "id": 34,
+              "name": "Athens",
+              "score": 0.0403,
+              "relevance": 0
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.0388,
+              "relevance": 0
+            },
+            {
+              "id": 27,
+              "name": "Lisbon",
+              "score": 0.0386,
+              "relevance": 1
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.1667,
+            "ndcg@1": 0.4286,
+            "precision@3": 0.6667,
+            "recall@3": 0.3333,
+            "ndcg@3": 0.5742,
+            "precision@5": 0.4,
+            "recall@5": 0.3333,
+            "ndcg@5": 0.5081,
+            "precision@10": 0.5,
+            "recall@10": 0.8333,
+            "ndcg@10": 0.7429,
+            "mrr": 1.0,
+            "map": 0.5952
+          }
+        },
+        {
+          "query_id": "q20",
+          "query": "somewhere sacred where faith is part of daily life",
+          "type": "paraphrase",
+          "judged_count": 5,
+          "elapsed_ms": 3.05,
+          "top_results": [
+            {
+              "id": 44,
+              "name": "Varanasi",
+              "score": 0.1021,
+              "relevance": 3
+            },
+            {
+              "id": 45,
+              "name": "Paro Valley",
+              "score": 0.0641,
+              "relevance": 3
+            },
+            {
+              "id": 4,
+              "name": "Marrakesh",
+              "score": 0.0556,
+              "relevance": 0
+            },
+            {
+              "id": 10,
+              "name": "Machu Picchu",
+              "score": 0.0468,
+              "relevance": 0
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.0459,
+              "relevance": 0
+            },
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 30,
+              "name": "Amsterdam",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 32,
+              "name": "Angkor Wat",
+              "score": 0.0,
+              "relevance": 1
+            },
+            {
+              "id": 34,
+              "name": "Athens",
+              "score": 0.0,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.2,
+            "ndcg@1": 1.0,
+            "precision@3": 0.6667,
+            "recall@3": 0.4,
+            "ndcg@3": 0.8839,
+            "precision@5": 0.4,
+            "recall@5": 0.4,
+            "ndcg@5": 0.8313,
+            "precision@10": 0.3,
+            "recall@10": 0.6,
+            "ndcg@10": 0.8532,
+            "mrr": 1.0,
+            "map": 0.4667
+          }
+        },
+        {
+          "query_id": "q21",
+          "query": "photograph rare animals in their natural habitat",
+          "type": "paraphrase",
+          "judged_count": 6,
+          "elapsed_ms": 5.7,
+          "top_results": [
+            {
+              "id": 35,
+              "name": "Galápagos Islands",
+              "score": 0.0741,
+              "relevance": 3
+            },
+            {
+              "id": 3,
+              "name": "Banff National Park",
+              "score": 0.0736,
+              "relevance": 1
+            },
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.0,
+              "relevance": 2
+            },
+            {
+              "id": 30,
+              "name": "Amsterdam",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 32,
+              "name": "Angkor Wat",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 34,
+              "name": "Athens",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 11,
+              "name": "Barcelona",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 29,
+              "name": "Buenos Aires",
+              "score": 0.0,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.1667,
+            "ndcg@1": 1.0,
+            "precision@3": 0.6667,
+            "recall@3": 0.3333,
+            "ndcg@3": 0.5116,
+            "precision@5": 0.6,
+            "recall@5": 0.5,
+            "ndcg@5": 0.5137,
+            "precision@10": 0.3,
+            "recall@10": 0.5,
+            "ndcg@10": 0.5034,
+            "mrr": 1.0,
+            "map": 0.4583
+          }
+        },
+        {
+          "query_id": "q22",
+          "query": "a once in a lifetime trip where money is no object",
+          "type": "paraphrase",
+          "judged_count": 6,
+          "elapsed_ms": 3.42,
+          "top_results": [
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 30,
+              "name": "Amsterdam",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 32,
+              "name": "Angkor Wat",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 34,
+              "name": "Athens",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 3,
+              "name": "Banff National Park",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 11,
+              "name": "Barcelona",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 29,
+              "name": "Buenos Aires",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 9,
+              "name": "Cape Town",
+              "score": 0.0,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 0.0,
+            "recall@1": 0.0,
+            "ndcg@1": 0.0,
+            "precision@3": 0.0,
+            "recall@3": 0.0,
+            "ndcg@3": 0.0,
+            "precision@5": 0.0,
+            "recall@5": 0.0,
+            "ndcg@5": 0.0,
+            "precision@10": 0.0,
+            "recall@10": 0.0,
+            "ndcg@10": 0.0,
+            "mrr": 0.0,
+            "map": 0.0
+          }
+        },
+        {
+          "query_id": "q23",
+          "query": "somewhere very cheap for a long backpacking trip",
+          "type": "paraphrase",
+          "judged_count": 9,
+          "elapsed_ms": 3.02,
+          "top_results": [
+            {
+              "id": 14,
+              "name": "Phuket",
+              "score": 0.1203,
+              "relevance": 2
+            },
+            {
+              "id": 31,
+              "name": "Petra",
+              "score": 0.0623,
+              "relevance": 0
+            },
+            {
+              "id": 32,
+              "name": "Angkor Wat",
+              "score": 0.0606,
+              "relevance": 2
+            },
+            {
+              "id": 15,
+              "name": "Zanzibar",
+              "score": 0.0583,
+              "relevance": 0
+            },
+            {
+              "id": 18,
+              "name": "El Nido, Palawan",
+              "score": 0.058,
+              "relevance": 2
+            },
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 30,
+              "name": "Amsterdam",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 34,
+              "name": "Athens",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.0,
+              "relevance": 1
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.1111,
+            "ndcg@1": 0.4286,
+            "precision@3": 0.6667,
+            "recall@3": 0.2222,
+            "ndcg@3": 0.3017,
+            "precision@5": 0.6,
+            "recall@5": 0.3333,
+            "ndcg@5": 0.3259,
+            "precision@10": 0.4,
+            "recall@10": 0.4444,
+            "ndcg@10": 0.2967,
+            "mrr": 1.0,
+            "map": 0.2963
+          }
+        },
+        {
+          "query_id": "q24",
+          "query": "big modern city with excellent public transport",
+          "type": "lexical",
+          "judged_count": 5,
+          "elapsed_ms": 2.97,
+          "top_results": [
+            {
+              "id": 24,
+              "name": "Tokyo",
+              "score": 0.168,
+              "relevance": 3
+            },
+            {
+              "id": 26,
+              "name": "Singapore",
+              "score": 0.1516,
+              "relevance": 3
+            },
+            {
+              "id": 25,
+              "name": "Istanbul",
+              "score": 0.0888,
+              "relevance": 0
+            },
+            {
+              "id": 12,
+              "name": "Serengeti National Park",
+              "score": 0.0518,
+              "relevance": 0
+            },
+            {
+              "id": 39,
+              "name": "Kruger National Park",
+              "score": 0.0484,
+              "relevance": 0
+            },
+            {
+              "id": 28,
+              "name": "Dubai",
+              "score": 0.0376,
+              "relevance": 2
+            },
+            {
+              "id": 1,
+              "name": "Santorini",
+              "score": 0.0347,
+              "relevance": 0
+            },
+            {
+              "id": 23,
+              "name": "Chamonix",
+              "score": 0.0275,
+              "relevance": 0
+            },
+            {
+              "id": 34,
+              "name": "Athens",
+              "score": 0.0275,
+              "relevance": 0
+            },
+            {
+              "id": 9,
+              "name": "Cape Town",
+              "score": 0.0253,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.2,
+            "ndcg@1": 1.0,
+            "precision@3": 0.6667,
+            "recall@3": 0.4,
+            "ndcg@3": 0.8839,
+            "precision@5": 0.4,
+            "recall@5": 0.4,
+            "ndcg@5": 0.7822,
+            "precision@10": 0.3,
+            "recall@10": 0.6,
+            "ndcg@10": 0.8554,
+            "mrr": 1.0,
+            "map": 0.5
+          }
+        },
+        {
+          "query_id": "q25",
+          "query": "wine tasting and vineyards",
+          "type": "lexical",
+          "judged_count": 5,
+          "elapsed_ms": 5.7,
+          "top_results": [
+            {
+              "id": 9,
+              "name": "Cape Town",
+              "score": 0.0901,
+              "relevance": 3
+            },
+            {
+              "id": 1,
+              "name": "Santorini",
+              "score": 0.0859,
+              "relevance": 2
+            },
+            {
+              "id": 29,
+              "name": "Buenos Aires",
+              "score": 0.0845,
+              "relevance": 2
+            },
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 30,
+              "name": "Amsterdam",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 32,
+              "name": "Angkor Wat",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 34,
+              "name": "Athens",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 3,
+              "name": "Banff National Park",
+              "score": 0.0,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 1.0,
+            "recall@1": 0.2,
+            "ndcg@1": 1.0,
+            "precision@3": 1.0,
+            "recall@3": 0.6,
+            "ndcg@3": 1.0,
+            "precision@5": 0.6,
+            "recall@5": 0.6,
+            "ndcg@5": 0.9271,
+            "precision@10": 0.3,
+            "recall@10": 0.6,
+            "ndcg@10": 0.9271,
+            "mrr": 1.0,
+            "map": 0.6
+          }
+        },
+        {
+          "query_id": "q26",
+          "query": "get away from the tourist trail to somewhere few people go",
+          "type": "paraphrase",
+          "judged_count": 7,
+          "elapsed_ms": 3.54,
+          "top_results": [
+            {
+              "id": 10,
+              "name": "Machu Picchu",
+              "score": 0.068,
+              "relevance": 0
+            },
+            {
+              "id": 28,
+              "name": "Dubai",
+              "score": 0.0658,
+              "relevance": 0
+            },
+            {
+              "id": 1,
+              "name": "Santorini",
+              "score": 0.0657,
+              "relevance": 0
+            },
+            {
+              "id": 23,
+              "name": "Chamonix",
+              "score": 0.061,
+              "relevance": 0
+            },
+            {
+              "id": 16,
+              "name": "Algarve",
+              "score": 0.0,
+              "relevance": 1
+            },
+            {
+              "id": 36,
+              "name": "Amazon Rainforest",
+              "score": 0.0,
+              "relevance": 2
+            },
+            {
+              "id": 30,
+              "name": "Amsterdam",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 32,
+              "name": "Angkor Wat",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 34,
+              "name": "Athens",
+              "score": 0.0,
+              "relevance": 0
+            },
+            {
+              "id": 7,
+              "name": "Bali",
+              "score": 0.0,
+              "relevance": 0
+            }
+          ],
+          "scores": {
+            "precision@1": 0.0,
+            "recall@1": 0.0,
+            "ndcg@1": 0.0,
+            "precision@3": 0.0,
+            "recall@3": 0.0,
+            "ndcg@3": 0.0,
+            "precision@5": 0.2,
+            "recall@5": 0.1429,
+            "ndcg@5": 0.0252,
+            "precision@10": 0.2,
+            "recall@10": 0.2857,
+            "ndcg@10": 0.0906,
+            "mrr": 0.2,
+            "map": 0.0762
+          }
+        }
+      ]
+    }
+  },
+  "comparison": {
+    "available": true,
+    "direction": "positive favours semantic, negative favours tfidf",
+    "shared_query_count": 26,
+    "per_metric": {
+      "precision@1": {
+        "n_queries": 26,
+        "mean_difference": 0.0,
+        "a_wins": 1,
+        "b_wins": 1,
+        "ties": 24,
+        "std_difference": 0.2828,
+        "paired_t": 0.0,
+        "cohens_d": 0.0
+      },
+      "precision@3": {
+        "n_queries": 26,
+        "mean_difference": 0.0,
+        "a_wins": 7,
+        "b_wins": 7,
+        "ties": 12,
+        "std_difference": 0.2981,
+        "paired_t": 0.0,
+        "cohens_d": 0.0
+      },
+      "precision@5": {
+        "n_queries": 26,
+        "mean_difference": 0.0692,
+        "a_wins": 12,
+        "b_wins": 7,
+        "ties": 7,
+        "std_difference": 0.2825,
+        "paired_t": 1.2495,
+        "cohens_d": 0.2451
+      },
+      "precision@10": {
+        "n_queries": 26,
+        "mean_difference": 0.0615,
+        "a_wins": 14,
+        "b_wins": 5,
+        "ties": 7,
+        "std_difference": 0.1768,
+        "paired_t": 1.7747,
+        "cohens_d": 0.348
+      },
+      "ndcg@1": {
+        "n_queries": 26,
+        "mean_difference": -0.0659,
+        "a_wins": 3,
+        "b_wins": 6,
+        "ties": 17,
+        "std_difference": 0.4085,
+        "paired_t": -0.8229,
+        "cohens_d": -0.1614
+      },
+      "ndcg@3": {
+        "n_queries": 26,
+        "mean_difference": 0.0043,
+        "a_wins": 8,
+        "b_wins": 12,
+        "ties": 6,
+        "std_difference": 0.2633,
+        "paired_t": 0.0828,
+        "cohens_d": 0.0162
+      },
+      "ndcg@5": {
+        "n_queries": 26,
+        "mean_difference": 0.0212,
+        "a_wins": 11,
+        "b_wins": 15,
+        "ties": 0,
+        "std_difference": 0.2636,
+        "paired_t": 0.4103,
+        "cohens_d": 0.0805
+      },
+      "ndcg@10": {
+        "n_queries": 26,
+        "mean_difference": 0.0606,
+        "a_wins": 16,
+        "b_wins": 10,
+        "ties": 0,
+        "std_difference": 0.2533,
+        "paired_t": 1.2189,
+        "cohens_d": 0.239
+      },
+      "mrr": {
+        "n_queries": 26,
+        "mean_difference": 0.0074,
+        "a_wins": 2,
+        "b_wins": 2,
+        "ties": 22,
+        "std_difference": 0.2874,
+        "paired_t": 0.1317,
+        "cohens_d": 0.0258
+      },
+      "map": {
+        "n_queries": 26,
+        "mean_difference": 0.0683,
+        "a_wins": 15,
+        "b_wins": 10,
+        "ties": 1,
+        "std_difference": 0.2693,
+        "paired_t": 1.2938,
+        "cohens_d": 0.2537
+      }
+    },
+    "headline": {
+      "metric": "ndcg@5",
+      "semantic": 0.6704,
+      "tfidf": 0.6492,
+      "difference": 0.0212,
+      "verdict": "Semantic ahead of TF-IDF on ndcg@5 by +0.0212 (wins 11 queries, loses 15)."
+    },
+    "by_query_type": {
+      "lexical": {
+        "n_queries": 18,
+        "mean_difference": -0.053,
+        "a_wins": 5,
+        "b_wins": 13,
+        "ties": 0,
+        "std_difference": 0.1528,
+        "paired_t": -1.4718,
+        "cohens_d": -0.3469
+      },
+      "paraphrase": {
+        "n_queries": 8,
+        "mean_difference": 0.1882,
+        "a_wins": 6,
+        "b_wins": 2,
+        "ties": 0,
+        "std_difference": 0.3815,
+        "paired_t": 1.3952,
+        "cohens_d": 0.4933
+      }
+    },
+    "latency": {
+      "semantic_mean_ms": 16.59,
+      "tfidf_mean_ms": 4.94,
+      "semantic_slowdown_x": 3.36
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/my computer & laptop/Downloads/wanderlust/**)",
+      "Read(//c/Users/my computer & laptop/Downloads/wanderlust/wanderlust/**)",
+      "Read(//c/Users/my computer & laptop/Downloads/wanderlust/wanderlust/backend/**)"
+    ]
+  }
+}

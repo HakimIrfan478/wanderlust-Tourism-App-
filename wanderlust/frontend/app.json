@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Wanderlust",
+    "slug": "wanderlust",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "primaryColor": "#0E7C7B",
+    "description": "Tourism management app comparing a transformer-based semantic recommender against a TF-IDF baseline.",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0E7C7B"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.wanderlust.fyp"
+    },
+    "android": {
+      "package": "com.wanderlust.fyp",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0E7C7B"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

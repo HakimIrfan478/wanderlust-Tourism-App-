@@ -1,0 +1,53 @@
+model,query_id,query,query_type,judged_count,elapsed_ms,top_1,precision@1,recall@1,ndcg@1,precision@3,recall@3,ndcg@3,precision@5,recall@5,ndcg@5,precision@10,recall@10,ndcg@10,mrr,map
+semantic,q01,quiet beaches with great seafood and no big crowds,lexical,7,30.27,Maldives,1.0,0.1429,0.4286,1.0,0.4286,0.5307,0.8,0.5714,0.6117,0.6,0.8571,0.7699,1.0,0.752
+semantic,q02,somewhere peaceful by the sea to switch off completely,paraphrase,7,15.92,Maldives,1.0,0.1429,1.0,0.6667,0.2857,0.8839,0.6,0.4286,0.8183,0.5,0.7143,0.8961,1.0,0.5143
+semantic,q03,ancient ruins and museums with amazing local food,lexical,8,11.93,Rome,1.0,0.125,1.0,1.0,0.375,1.0,0.8,0.5,0.9159,0.6,0.75,0.933,1.0,0.6393
+semantic,q04,extreme adventure sports in the mountains,lexical,8,15.14,Queenstown,1.0,0.125,1.0,1.0,0.375,0.7272,0.8,0.5,0.6867,0.6,0.75,0.7241,1.0,0.6729
+semantic,q05,wildlife safari and unspoiled nature,lexical,5,13.96,Amazon Rainforest,1.0,0.2,0.4286,1.0,0.6,0.8452,1.0,1.0,0.863,0.5,1.0,0.863,1.0,1.0
+semantic,q06,romantic getaway with beautiful sunsets,lexical,7,14.47,Santorini,1.0,0.1429,1.0,0.6667,0.2857,0.6885,0.6,0.4286,0.6388,0.4,0.5714,0.7626,1.0,0.4745
+semantic,q07,cheap trip in Asia with amazing street food,lexical,7,15.54,Phuket,1.0,0.1429,1.0,0.6667,0.2857,0.6581,0.6,0.4286,0.5782,0.4,0.5714,0.6786,1.0,0.419
+semantic,q08,trekking at high altitude in the Himalayas,lexical,5,15.08,Everest Base Camp Trek,1.0,0.2,1.0,0.6667,0.4,0.8839,0.4,0.4,0.8313,0.3,0.6,0.9091,1.0,0.5
+semantic,q09,a city break with great architecture and walkable streets,lexical,8,18.49,Lisbon,1.0,0.125,1.0,0.6667,0.25,0.7039,0.8,0.5,0.7012,0.7,0.875,0.8264,1.0,0.7228
+semantic,q10,see the northern lights and dramatic volcanic landscapes,lexical,2,16.92,Reykjavik,1.0,0.5,1.0,0.3333,0.5,0.9173,0.2,0.5,0.9173,0.2,1.0,0.961,1.0,0.6429
+semantic,q11,learn about Buddhist temples and monasteries,lexical,4,16.99,Kyoto,1.0,0.25,1.0,0.6667,0.5,0.6885,0.6,0.75,0.8921,0.4,1.0,0.9188,1.0,0.8542
+semantic,q12,desert landscapes and camping under the stars,lexical,5,17.03,Wadi Rum,1.0,0.2,1.0,0.3333,0.2,0.6735,0.4,0.4,0.6628,0.3,0.6,0.7434,1.0,0.3667
+semantic,q13,a safe destination that is easy to travel with children,paraphrase,5,16.58,Singapore,1.0,0.2,1.0,0.3333,0.2,0.6735,0.4,0.4,0.6628,0.2,0.4,0.6628,1.0,0.3
+semantic,q14,snorkelling and diving on coral reefs,lexical,6,15.58,Galápagos Islands,1.0,0.1667,1.0,1.0,0.5,1.0,1.0,0.8333,0.9504,0.6,1.0,0.9916,1.0,1.0
+semantic,q15,skiing and snowboarding holiday,lexical,5,16.69,Queenstown,1.0,0.2,0.4286,0.6667,0.4,0.5032,0.6,0.6,0.6191,0.4,0.8,0.6778,1.0,0.5722
+semantic,q16,"traditional crafts, markets and haggling",lexical,6,16.84,Hoi An,1.0,0.1667,0.1429,1.0,0.5,0.5355,0.6,0.5,0.4739,0.5,0.8333,0.6819,1.0,0.6994
+semantic,q17,"waterfalls, lakes and forest walks",lexical,5,16.93,Plitvice Lakes,1.0,0.2,1.0,0.6667,0.4,0.8179,0.8,0.8,0.8312,0.5,1.0,0.9204,1.0,0.7862
+semantic,q18,I want to learn to cook the local dishes,paraphrase,6,17.28,Oaxaca,1.0,0.1667,1.0,0.6667,0.3333,0.8839,0.6,0.5,0.8707,0.4,0.6667,0.8723,1.0,0.5536
+semantic,q19,world class nightlife and bars,lexical,6,16.34,Barcelona,1.0,0.1667,1.0,0.6667,0.3333,0.6885,0.6,0.5,0.7948,0.3,0.5,0.7759,1.0,0.4333
+semantic,q20,somewhere sacred where faith is part of daily life,paraphrase,5,15.35,Varanasi,1.0,0.2,1.0,0.6667,0.4,0.6885,0.8,0.8,0.876,0.4,0.8,0.876,1.0,0.71
+semantic,q21,photograph rare animals in their natural habitat,paraphrase,6,14.36,Amazon Rainforest,1.0,0.1667,0.4286,1.0,0.5,0.5978,1.0,0.8333,0.7092,0.6,1.0,0.8356,1.0,1.0
+semantic,q22,a once in a lifetime trip where money is no object,paraphrase,6,15.63,Amsterdam,0.0,0.0,0.0,0.0,0.0,0.0,0.2,0.1667,0.0841,0.1,0.1667,0.0822,0.25,0.0417
+semantic,q23,somewhere very cheap for a long backpacking trip,paraphrase,9,17.18,Wadi Rum,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+semantic,q24,big modern city with excellent public transport,lexical,5,17.28,Tokyo,1.0,0.2,1.0,0.6667,0.4,0.8839,0.6,0.6,0.8707,0.5,1.0,0.9609,1.0,0.7893
+semantic,q25,wine tasting and vineyards,lexical,5,17.49,Barcelona,1.0,0.2,0.1429,1.0,0.6,0.6151,0.6,0.6,0.5703,0.4,0.8,0.6595,1.0,0.7143
+semantic,q26,get away from the tourist trail to somewhere few people go,paraphrase,7,15.96,Serengeti National Park,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.2,0.2857,0.1163,0.1429,0.049
+tfidf,q01,quiet beaches with great seafood and no big crowds,lexical,7,43.88,Santorini,1.0,0.1429,0.4286,0.6667,0.2857,0.4358,0.8,0.5714,0.7037,0.6,0.8571,0.7535,1.0,0.6857
+tfidf,q02,somewhere peaceful by the sea to switch off completely,paraphrase,7,3.34,Algarve,1.0,0.1429,0.4286,0.3333,0.1429,0.2323,0.2,0.1429,0.1952,0.2,0.2857,0.2048,1.0,0.1714
+tfidf,q03,ancient ruins and museums with amazing local food,lexical,8,2.26,Rome,1.0,0.125,1.0,1.0,0.375,1.0,1.0,0.625,0.944,0.7,0.875,0.9281,1.0,0.875
+tfidf,q04,extreme adventure sports in the mountains,lexical,8,2.19,Queenstown,1.0,0.125,1.0,0.6667,0.25,0.6581,0.4,0.25,0.5531,0.4,0.5,0.6019,1.0,0.3423
+tfidf,q05,wildlife safari and unspoiled nature,lexical,5,2.19,Serengeti National Park,1.0,0.2,1.0,1.0,0.6,1.0,0.8,0.8,0.9645,0.5,1.0,0.9873,1.0,0.9029
+tfidf,q06,romantic getaway with beautiful sunsets,lexical,7,2.57,Santorini,1.0,0.1429,1.0,0.3333,0.1429,0.5419,0.2,0.1429,0.4796,0.2,0.2857,0.5234,1.0,0.1837
+tfidf,q07,cheap trip in Asia with amazing street food,lexical,7,4.96,Phuket,1.0,0.1429,1.0,0.6667,0.2857,0.5908,0.6,0.4286,0.6927,0.4,0.5714,0.6912,1.0,0.4643
+tfidf,q08,trekking at high altitude in the Himalayas,lexical,5,3.28,Everest Base Camp Trek,1.0,0.2,1.0,1.0,0.6,0.9226,0.8,0.8,0.899,0.4,0.8,0.899,1.0,0.8
+tfidf,q09,a city break with great architecture and walkable streets,lexical,8,3.41,Lisbon,1.0,0.125,1.0,1.0,0.375,0.8659,0.8,0.5,0.8996,0.6,0.75,0.8842,1.0,0.6393
+tfidf,q10,see the northern lights and dramatic volcanic landscapes,lexical,2,3.83,Reykjavik,1.0,0.5,1.0,0.6667,1.0,1.0,0.4,1.0,1.0,0.2,1.0,1.0,1.0,1.0
+tfidf,q11,learn about Buddhist temples and monasteries,lexical,4,4.87,Paro Valley,1.0,0.25,1.0,0.6667,0.5,0.8129,0.6,0.75,0.8736,0.3,0.75,0.8736,1.0,0.5667
+tfidf,q12,desert landscapes and camping under the stars,lexical,5,2.62,Wadi Rum,1.0,0.2,1.0,0.6667,0.4,0.7217,0.6,0.6,0.7726,0.5,1.0,0.8935,1.0,0.7295
+tfidf,q13,a safe destination that is easy to travel with children,paraphrase,5,2.32,Singapore,1.0,0.2,1.0,0.3333,0.2,0.6735,0.2,0.2,0.6244,0.1,0.2,0.6244,1.0,0.2
+tfidf,q14,snorkelling and diving on coral reefs,lexical,6,2.2,Maldives,1.0,0.1667,1.0,1.0,0.5,1.0,1.0,0.8333,0.9555,0.6,1.0,0.9965,1.0,1.0
+tfidf,q15,skiing and snowboarding holiday,lexical,5,2.19,Banff National Park,1.0,0.2,1.0,1.0,0.6,0.8046,0.8,0.8,0.8724,0.4,0.8,0.8724,1.0,0.8
+tfidf,q16,"traditional crafts, markets and haggling",lexical,6,4.31,Marrakesh,1.0,0.1667,1.0,0.6667,0.3333,0.6581,0.4,0.3333,0.5824,0.2,0.3333,0.5685,1.0,0.2778
+tfidf,q17,"waterfalls, lakes and forest walks",lexical,5,4.59,Plitvice Lakes,1.0,0.2,1.0,1.0,0.6,0.9038,0.8,0.8,0.9531,0.4,0.8,0.9531,1.0,0.8
+tfidf,q18,I want to learn to cook the local dishes,paraphrase,6,3.21,Algarve,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+tfidf,q19,world class nightlife and bars,lexical,6,2.94,Amsterdam,1.0,0.1667,0.4286,0.6667,0.3333,0.5742,0.4,0.3333,0.5081,0.5,0.8333,0.7429,1.0,0.5952
+tfidf,q20,somewhere sacred where faith is part of daily life,paraphrase,5,3.05,Varanasi,1.0,0.2,1.0,0.6667,0.4,0.8839,0.4,0.4,0.8313,0.3,0.6,0.8532,1.0,0.4667
+tfidf,q21,photograph rare animals in their natural habitat,paraphrase,6,5.7,Galápagos Islands,1.0,0.1667,1.0,0.6667,0.3333,0.5116,0.6,0.5,0.5137,0.3,0.5,0.5034,1.0,0.4583
+tfidf,q22,a once in a lifetime trip where money is no object,paraphrase,6,3.42,Algarve,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+tfidf,q23,somewhere very cheap for a long backpacking trip,paraphrase,9,3.02,Phuket,1.0,0.1111,0.4286,0.6667,0.2222,0.3017,0.6,0.3333,0.3259,0.4,0.4444,0.2967,1.0,0.2963
+tfidf,q24,big modern city with excellent public transport,lexical,5,2.97,Tokyo,1.0,0.2,1.0,0.6667,0.4,0.8839,0.4,0.4,0.7822,0.3,0.6,0.8554,1.0,0.5
+tfidf,q25,wine tasting and vineyards,lexical,5,5.7,Cape Town,1.0,0.2,1.0,1.0,0.6,1.0,0.6,0.6,0.9271,0.3,0.6,0.9271,1.0,0.6
+tfidf,q26,get away from the tourist trail to somewhere few people go,paraphrase,7,3.54,Machu Picchu,0.0,0.0,0.0,0.0,0.0,0.0,0.2,0.1429,0.0252,0.2,0.2857,0.0906,0.2,0.0762

@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Django
+db.sqlite3
+db.sqlite3-journal
+/backend/staticfiles/
+*.log
+
+# Secrets — .env.example is committed, .env is not
+.env
+.env.local
+
+# Evaluation output: results.json / results.csv are committed as the
+# reproducible headline result; the timestamped copies are local run history.
+backend/evaluation_results/results-*.json
+backend/evaluation_results/results-*.csv
+
+# Node / Expo
+node_modules/
+.expo/
+.expo-shared/
+dist/
+web-build/
+npm-debug.*
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
