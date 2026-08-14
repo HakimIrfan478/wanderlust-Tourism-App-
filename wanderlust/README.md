@@ -384,3 +384,4 @@ frontend/
   src/api/                        axios client with JWT refresh
 .github/workflows/ci.yml
 ```
+Repository finalised for final-year project submission.
